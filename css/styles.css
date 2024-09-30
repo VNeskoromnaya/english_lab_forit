@@ -1,0 +1,394 @@
+/* в будущем цвета заменить на переменные */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 430px;
+  max-height: 6300px;
+  margin: 0 auto;
+  /* border: 2px solid black; */
+}
+
+.title {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 108%;
+  text-transform: uppercase;
+}
+
+.title__bold {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #002424;
+  /* color: var(--1); */
+}
+
+.btn {
+  margin-top: 25px;
+  border: none;
+  border-radius: 11px;
+  width: 170px;
+  height: 50px;
+  background: #fbc8cd;
+  /* background: var(--2); */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: #002424;
+  /* color: var(--1); */
+}
+
+/* First screen */
+
+.main {
+  min-height: 480px;
+  background-color: #002424;
+  border-radius: 20px;
+  padding: 32px 22px 46px 28px;
+}
+
+.main div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-block;
+  max-width: 80px;
+}
+
+/* стиль для иконки бургер-меню с последующей заменой */
+.menu_mobile {
+  display: inline-block;
+  max-width: 23px;
+}
+
+.title__main {
+  margin-top: 41px;
+  color: #fbc8cd;
+  font-size: 30px;
+  line-height: 100%;
+}
+
+.title__main span {
+  display: block;
+  color: #fff;
+  /* color: var(--5); */
+  line-height: 113%;
+}
+
+.main h2 {
+  color: #fff;
+  /* color: var(--5); */
+  font-size: 27px;
+  line-height: 126%;
+}
+
+.main p {
+  margin-top: 4px;
+  max-width: 260px;
+  line-height: 114%;
+  color: #fff;
+  /* color: var(--5); */
+}
+
+.details {
+  margin-top: 41px;
+  list-style: none;
+}
+
+.details__item {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  color: #fff;
+  /* color: var(--5); */
+  display: flex;
+}
+
+.details__item img {
+  margin-right: 6px;
+}
+
+/* Second screen - Section Why-ness of the course */
+.why {
+  margin-top: 36px;
+  padding: 28px 0 0 28px;
+  min-height: 348px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  /* background-color: var(--6) */
+}
+
+.why h2 span {
+  display: block;
+}
+
+.why .text {
+  max-width: 294px;
+  margin-top: 22px;
+}
+
+/* Third screen - Section Who is this course for? */
+.customers {
+  margin-top: 36px;
+  /* padding: 0 0 0 28px; */
+  min-height: 360px;
+  /* border-radius: 20px; */
+  /* background-color: var(--6) */
+}
+
+.customers__item {
+  /* max-width: 344px; */
+  height: 88px;
+  margin-top: 16px;
+  padding: 21px 26px 17px 26px;
+  border-radius: 20px;
+  background-color: #e5f8c8;
+  /* background: var(--3); */
+}
+
+/* Forth screen - Section Why is this course unique? */
+.uniqueness {
+  margin-top: 36px;
+  padding: 28px 26px 28px 28px;
+  min-height: 284px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  /* background-color: var(--6) */
+}
+
+.uniqueness h2 span {
+  display: block;
+}
+
+.uniqueness__list {
+  margin-top: 18px;
+  list-style: none;
+  min-height: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Section After the course */
+.after {
+  margin-top: 35px;
+  padding: 28px 18px 18px 28px;
+  border: 1.4px solid #8bac72;
+  /* border: 1.40px solid var(--4); */
+  border-radius: 20px;
+}
+
+.after .title span {
+  display: block;
+}
+
+.title_green {
+  font-style: italic;
+  font-weight: 700;
+  color: #8bac72;
+  /* color: var(--4); */
+}
+
+.after__list {
+  /* margin-top: 15px; */
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* .after__item > .text {
+  line-height: 129%;
+} */
+
+.text_bold {
+  font-weight: 600;
+}
+
+/* Sections How does it all go? */
+.steps {
+  max-height: 495px;
+  margin-top: 35px;
+  padding: 28px 26px 24px 24px;
+  background-image: url('../img/steps_vector.svg'), url('../img/bg.jpg');
+  background-position: center center, center center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 55%, cover;
+
+  border: 1.4px solid #8bac72;
+  /* border: 1.40px solid var(--4); */
+  border-radius: 20px;
+}
+
+.title_white {
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
+  /* color: var(--5); */
+}
+
+.steps__list {
+  min-height: 480px;
+  margin-top: 25px;
+  list-style: none;
+  position: relative;
+}
+
+.steps__item {
+  background-color: #fff;
+  /* background-color: var(--5); */
+  border-radius: 10px;
+  padding: 0 14px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* !!! застилизовать номера списка согласно макета */
+.steps__item:nth-child(1) {
+  max-width: 188px;
+  height: 42px;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  transform: rotate(4deg);
+}
+
+.steps__item:nth-child(2) {
+  margin-top: 10px;
+  max-width: 127px;
+  height: 36px;
+  position: absolute;
+  left: 30px;
+  top: 35px;
+  transform: rotate(-4deg);
+}
+
+.steps__item:nth-child(3) {
+  max-width: 213px;
+  height: 42px;
+  margin-top: 10px;
+  position: absolute;
+  right: 15px;
+  top: 85px;
+  transform: rotate(3deg);
+}
+
+.steps__item:nth-child(4) {
+  max-width: 171px;
+  height: 36px;
+  margin-top: 10px;
+  position: absolute;
+  left: 25px;
+  top: 140px;
+  transform: rotate(-5deg);
+}
+
+.steps__item:nth-child(5) {
+  max-width: 257px;
+  height: 45px;
+  margin-top: 10px;
+  position: absolute;
+  right: 15px;
+  top: 200px;
+  transform: rotate(3deg);
+}
+
+.steps__item:nth-child(6) {
+  max-width: 202px;
+  height: 36px;
+  margin-top: 10px;
+  position: absolute;
+  left: 30px;
+  top: 275px;
+  transform: rotate(-4deg);
+}
+
+.steps__item:nth-child(7) {
+  max-width: 151px;
+  height: 36px;
+  margin-top: 10px;
+  position: absolute;
+  right: 80px;
+  top: 325px;
+  transform: rotate(4deg);
+}
+
+.text_small {
+  font-size: 12px;
+  line-height: 117%;
+}
+
+/* Section Course program */
+.program {
+  margin-top: 35px;
+}
+
+/* !! переписать стиль с номерами согласно макета */
+.program__list {
+  list-style: none;
+  margin-top: 5px;
+  min-height: 480px;
+  padding: 0 25px 0 28px;
+  border-radius: 20px;
+  background: #e5f8c8;
+  /* background: var(--3); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.program__item {
+  min-width: 290px;
+  /* font-family: var(--font-family); */
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #002424;
+  /* color: var(--1); */
+}
+
+.program__number {
+  margin-right: 11px;
+  /* font-family: var(--font-family); */
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  color: #002424;
+  /* color: var(--1); */
+}
+
+.open {
+  display: flex;
+  justify-content: center;
+  width: 24px;
+  border-radius: 100%;
+  background-color: #fff;
+  /* background-color: var(--5); */
+}
+
+.open img {
+  width: 11px;
+}
+
+/* стилизация ромбом каждого элемента li списка */
+
+/* проверить на сегодня актуальную ширину моб телефонов  */
