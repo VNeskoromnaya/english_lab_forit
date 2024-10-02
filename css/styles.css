@@ -354,7 +354,7 @@
 }
 
 .program__item {
-  min-width: 290px;
+  min-width: 245px;
   /* font-family: var(--font-family); */
   display: flex;
   justify-content: space-between;
@@ -389,6 +389,105 @@
   width: 11px;
 }
 
+/* Section The author */
+.author {
+  margin-top: 35px;
+}
+
+.author__wrapper {
+  background-color: #002424;
+  max-height: 770px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.author__photo img {
+  width: 100%;
+}
+
+.author__list {
+  width: 100%;
+  min-height: 442px;
+  position: relative;
+  bottom: 245px;
+  list-style: none;
+  padding: 0 25px 25px 25px;
+  background: linear-gradient(
+    rgba(0, 36, 36, 0),
+    rgba(0, 36, 36, 0.8),
+    rgb(0, 36, 36)
+  );
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.author__item {
+  margin-top: 14px;
+  min-width: 295px;
+  height: 74px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e5f8c8;
+  /* background: var(--3); */
+  /* font-family: var(--font-family); */
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 108%;
+  text-transform: uppercase;
+  color: #002424;
+  /* color: var(--1); */
+}
+
+.author__item:nth-child(1) {
+  /* background-color: none; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background: #e5f8c8; */
+  background-color: rgba(0, 36, 36, 0);
+  /* font-family: var(--font-family); */
+  font-weight: 400;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #e5f8c8;
+  /* color: var(--3); */
+}
+
+.author__item_bold {
+  color: #e5f8c8;
+  font-style: italic;
+  font-weight: 700;
+  margin-left: 8px;
+  /* color: var(--3); */
+}
+
+.author__item:nth-child(1) .author__item_small {
+  display: block;
+  /* font-family: var(--font-family); */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #fff;
+  /* color: var(--5); */
+}
+
+.author__item_small {
+  display: block;
+  /* font-family: var(--font-family); */
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 157%;
+  color: #002424;
+  /* color: var(--1); */
+}
 /* стилизация ромбом каждого элемента li списка */
 
 /* проверить на сегодня актуальную ширину моб телефонов  */
