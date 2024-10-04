@@ -124,11 +124,13 @@
 /* Second screen - Section Why-ness of the course */
 .why {
   margin-top: 36px;
-  padding: 28px 0 0 28px;
+  padding: 28px 24px 10px 28px;
   min-height: 348px;
   border-radius: 20px;
-  background-color: #f5f5f5;
-  /* background-color: var(--6) */
+  background-image: url('../icons/why_bg.png'),
+    linear-gradient(to top, rgba(245, 245, 245, 1), rgba(245, 245, 245, 1));
+  background-position: center center, left top;
+  background-repeat: no-repeat, repeat;
 }
 
 .why h2 span {
@@ -136,12 +138,12 @@
 }
 
 .why .text {
-  max-width: 294px;
+  min-width: 280px;
   margin-top: 22px;
 }
 
 /* Third screen - Section Who is this course for? */
-.customers {
+.audience {
   margin-top: 36px;
   /* padding: 0 0 0 28px; */
   min-height: 360px;
@@ -149,7 +151,7 @@
   /* background-color: var(--6) */
 }
 
-.customers__item {
+.audience__item {
   /* max-width: 344px; */
   height: 88px;
   margin-top: 16px;
@@ -157,6 +159,28 @@
   border-radius: 20px;
   background-color: #e5f8c8;
   /* background: var(--3); */
+  position: relative;
+}
+
+.audience__sequence {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  display: inline-block;
+  /* font-family: var(--font-family); */
+  font-style: italic;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 50%;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  /* color: var(--5); */
+  z-index: 1;
+}
+
+.audience__item .text {
+  position: relative;
+  z-index: 2;
 }
 
 /* Forth screen - Section Why is this course unique? */
@@ -175,11 +199,20 @@
 
 .uniqueness__list {
   margin-top: 18px;
-  list-style: none;
+  /* list-style: none; */
+  list-style-type: none;
   min-height: 155px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.uniqueness__item {
+  padding-left: 31px;
+  background-image: url('../icons/uniqueness_item_icon.svg');
+  background-position: 0 0;
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
 }
 
 /* Section After the course */
@@ -203,13 +236,20 @@
 }
 
 .after__list {
-  /* margin-top: 15px; */
   min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  list-style-type: none;
 }
 
+.after__item {
+  padding-left: 35px;
+  background-image: url('../icons/after_item_icon.svg');
+  background-position: 0 3px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
 /* .after__item > .text {
   line-height: 129%;
 } */
@@ -224,10 +264,9 @@
   margin-top: 35px;
   padding: 28px 26px 24px 24px;
   background-image: url('../img/steps_vector.svg'), url('../img/bg.jpg');
-  background-position: center center, center center;
+  background-position: 60% 65%, center center;
   background-repeat: no-repeat, no-repeat;
   background-size: 55%, cover;
-
   border: 1.4px solid #8bac72;
   /* border: 1.40px solid var(--4); */
   border-radius: 20px;
@@ -256,7 +295,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 /* !!! застилизовать номера списка согласно макета */
@@ -285,7 +324,7 @@
   margin-top: 10px;
   position: absolute;
   right: 15px;
-  top: 85px;
+  top: 90px;
   transform: rotate(3deg);
 }
 
@@ -295,7 +334,7 @@
   margin-top: 10px;
   position: absolute;
   left: 25px;
-  top: 140px;
+  top: 145px;
   transform: rotate(-5deg);
 }
 
@@ -305,7 +344,7 @@
   margin-top: 10px;
   position: absolute;
   right: 15px;
-  top: 200px;
+  top: 210px;
   transform: rotate(3deg);
 }
 
@@ -315,7 +354,7 @@
   margin-top: 10px;
   position: absolute;
   left: 30px;
-  top: 275px;
+  top: 290px;
   transform: rotate(-4deg);
 }
 
@@ -325,7 +364,79 @@
   margin-top: 10px;
   position: absolute;
   right: 80px;
-  top: 325px;
+  top: 340px;
+  transform: rotate(4deg);
+}
+
+.steps__sequence {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 100%;
+  /* background: var(--3); */
+  /* font-family: var(--font-family); */
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 217%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #002424;
+  /* color: var(--1); */
+}
+
+.steps__item:nth-child(1) > .steps__sequence {
+  background: #e5f8c8;
+  /* background: var(--3); */
+  top: -17px;
+  right: 0;
+  transform: rotate(14deg);
+}
+
+.steps__item:nth-child(2) > .steps__sequence {
+  background: #fbc8cd;
+  /* background: var(--2); */
+  top: -18px;
+  left: 0;
+  transform: rotate(-7deg);
+}
+
+.steps__item:nth-child(3) > .steps__sequence {
+  background: #fbc8cd;
+  /* background: var(--2); */
+  top: -16px;
+  right: 0;
+  transform: rotate(4deg);
+}
+
+.steps__item:nth-child(4) > .steps__sequence {
+  background: #e5f8c8;
+  /* background: var(--3); */
+  top: -18px;
+  left: 0;
+  transform: rotate(-6deg);
+}
+
+.steps__item:nth-child(5) > .steps__sequence {
+  background: #fbc8cd;
+  /* background: var(--2); */
+  top: -17px;
+  right: 0;
+  transform: rotate(4deg);
+}
+
+.steps__item:nth-child(6) > .steps__sequence {
+  background: #e5f8c8;
+  /* background: var(--3); */
+  top: -18px;
+  left: 0;
+  transform: rotate(-13deg);
+}
+
+.steps__item:nth-child(7) > .steps__sequence {
+  background: #e5f8c8;
+  /* background: var(--3); */
+  top: -17px;
+  right: 0;
   transform: rotate(4deg);
 }
 
@@ -610,7 +721,7 @@
   background: #002424;
   /* background: var(--1); */
   color: #fff;
-/* color: var(--5); */
+  /* color: var(--5); */
 }
 
 .rate {
@@ -640,21 +751,21 @@
 /* !! cкорее всего это уже реализовывать через JS */
 /* .rate:focus {
   background: #fff; */
-  /* background: var(--5); */
-  /* border: #002424;
+/* background: var(--5); */
+/* border: #002424;
   color: #002424; */
-  /* color: var(--1); */
+/* color: var(--1); */
 /* }
 
 .rate:focus span {
   color: #002424; */
-  /* color: var(--1); */
+/* color: var(--1); */
 /* } */
 
 .format__info {
   display: flex;
-    flex-direction: row;
-    align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 .format__info img {
