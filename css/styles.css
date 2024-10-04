@@ -396,8 +396,8 @@
 
 .author__wrapper {
   background-color: #002424;
-  max-height: 770px;
-  border-radius: 20px;
+  height: 742px;
+  border-radius: 20px 20px 0 0;
   position: relative;
 }
 
@@ -414,8 +414,9 @@
   padding: 0 25px 25px 25px;
   background: linear-gradient(
     rgba(0, 36, 36, 0),
-    rgba(0, 36, 36, 0.8),
-    rgb(0, 36, 36)
+    rgba(0, 36, 36, 0.7),
+    rgba(0, 36, 36, 1),
+    rgb(0, 14, 14)
   );
   border-radius: 0 0 20px 20px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -488,6 +489,195 @@
   color: #002424;
   /* color: var(--1); */
 }
+
+/* Section The customers */
+.customers {
+  margin-top: 120px;
+  height: 220px;
+  padding: 25px 25px 30px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1.4px solid #f5f5f5;
+  /* border: 1.40px solid var(--6); */
+  border-radius: 20px;
+  background: #fff;
+  /* background: var(--5); */
+}
+
+.customers img {
+  max-width: 135px;
+}
+
+.feedback {
+  margin-top: 35px;
+}
+
+.feedback__card {
+  max-height: 288px;
+  border-radius: 20px;
+  padding: 14px 25px 18px 32px;
+  background: rgba(245, 245, 245, 0.5);
+  /* background: var(--6); */
+}
+
+.card__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar {
+  width: 50px;
+  margin-right: 12px;
+}
+
+.avatar__info {
+  /* font-family: var(--font-family); */
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  color: #002424;
+  /* color: var(--1); */
+}
+
+.avatar__info span {
+  display: block;
+  color: #8bac72;
+  /* color: var(--4); */
+}
+
+.divider {
+  height: 3px;
+  background: #fff;
+  /* background: var(--5); */
+}
+
+.student__review {
+  margin-top: 13px;
+  /* font-family: var(--font-family); */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #002424;
+  /* color: var(--1); */
+}
+
+.feedback-slider {
+  margin: 20px auto 0 auto;
+  width: 135px;
+  /** пока для себя условная зона */
+  border: 1px solid #8bac72;
+}
+
+.feedback-slider__arrow {
+  width: 24px;
+  height: 24px;
+  background-color: #8bac72;
+  /* background-color: var(--4); */
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section Price */
+.price {
+  min-height: 530px;
+}
+
+.price__list {
+  list-style: none;
+}
+
+.price__item {
+  margin-top: 30px;
+  width: 100%;
+  height: 154px;
+  padding: 40px 22px 21px 22px;
+  border-radius: 20px;
+  background: #e5f8c8;
+  /* background: var(--3); */
+  position: relative;
+}
+
+.price__item:nth-child(1) {
+  margin-top: 40px;
+}
+
+.price__item:focus {
+  background: #002424;
+  /* background: var(--1); */
+  color: #fff;
+/* color: var(--5); */
+}
+
+.rate {
+  width: 131px;
+  height: 31px;
+  border-radius: 10px;
+  position: absolute;
+  top: -4px;
+  right: 25px;
+  transform: rotate(4deg);
+  background: #002424;
+  /* background: var(--1); */
+  /* font-family: var(--font-family); */
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #fff;
+  /* color: var(--5); */
+  text-align: center;
+}
+
+.rate span {
+  font-weight: 400;
+}
+
+/* !! cкорее всего это уже реализовывать через JS */
+/* .rate:focus {
+  background: #fff; */
+  /* background: var(--5); */
+  /* border: #002424;
+  color: #002424; */
+  /* color: var(--1); */
+/* }
+
+.rate:focus span {
+  color: #002424; */
+  /* color: var(--1); */
+/* } */
+
+.format__info {
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.format__info img {
+  margin-right: 14px;
+}
+
+.enroll {
+  width: 170px;
+  height: 50px;
+  display: block;
+  margin: 20px auto 0 auto;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  /* background: var(--5); */
+  /* font-family: var(--font-family); */
+  font-weight: 400;
+  font-size: 18px;
+  color: #002424;
+  /* color: var(--1); */
+}
+
+/* "./icons/ckeck-light.svg" */
 /* стилизация ромбом каждого элемента li списка */
 
 /* проверить на сегодня актуальную ширину моб телефонов  */
