@@ -18,18 +18,6 @@
             <img src="icons/logo.svg" alt="logo" class="logo" />
             <!-- бургер-меню, которое буду создавать с помощью CSS + JS. Пока вставляю иконку, которую нужно будет удалить в будущем. -->
             <img src="icons/burger_menu.svg" alt="menu" class="menu_mobile" />
-            <!-- <nav class="navigation">
-				<ul class="menu_desktop">
-					<!-- cоздать ссылку-маяк на соответвующую секци/ -->
-            <!-- думаю, может добавить как вариант разделение между блоками типо такого => | -->
-            <!-- <li class="menu_desktop-item"><a href="#">About course</a></li>
-					<li class="menu_desktop-item"><a href="#">Who is this course for?</a></li>
-					<li class="menu_desktop-item"><a href="#">Course program</a></li>
-					<li class="menu_desktop-item"><a href="#">Reviews</a></li>
-					<li class="menu_desktop-item"><a href="#">Pricing</a></li>
-					<li class="menu_desktop-item"><a href="#">Contact</a></li>
-				</ul>
-			</nav> -->
           </div>
 
           <h1 class="title title__main title__bold">
@@ -517,6 +505,109 @@
             </li>
           </ul>
         </section>
+
+        <section class="questions">
+          <ol class="questions__list">
+            <!-- элемент li будет состоять из 1 - номер, 2 - текст , 3 - плюсик, который при нажатии будет открывать скрытый текст -->
+            <!-- при нажатии на "+" открывается скрытый текст и при этом "+" меняется на "-", после нажания на "-" текст скрывается и "-" меняется на "+" -->
+            <li class="question__item">
+              <div class="question__text">
+                <span class="question__sequence">01</span>
+                How do I pay for the course?
+              </div>
+              <div class="show">
+                <img src="./icons/question_item_show_icon.svg" alt="show answer" />
+              </div>
+              <div class="answer__text">The payment is due monthly onto my card or account after the final lesson of the current month, invoice provided on request
+              </div>
+            </li>
+            <div class="question__divider"></div>
+
+            <li class="question__item">
+              <div class="question__text">
+                <span class="question__sequence">02</span>
+                How long does the course last?
+              </div>
+              <div class="show">
+                <img src="./icons/question_item_show_icon.svg" alt="show answer" />
+              </div>
+              <div class="answer__text">It all depends on the learners' goals, abilities and frequency of meetings. Counting on 2 meetings per week, the course may endure for 10 - 12 month
+              </div>
+            </li>
+            <div class="question__divider"></div>
+
+            <li class="question__item">
+              <div class="question__text">
+                <span class="question__sequence">03</span>
+                How do I know about my progress?
+              </div>
+              <div class="show">
+                <img src="./icons/question_item_show_icon.svg" alt="show answer" />
+              </div>
+              <div class="answer__text">There are tests on each block to check the learners' progress
+              </div>
+            </li>
+            <div class="question__divider"></div>
+
+            <li class="question__item">
+              <div class="question__text">
+                <span class="question__sequence">04</span>
+                Is there any grammar on the course?
+              </div>
+              <div class="show">
+                <img src="./icons/question_item_show_icon.svg" alt="show answer" />
+              </div>
+              <div class="answer__text">There are 2-3 grammar topics to revise in each block and still the course focuses mostly on speaking and learning new vocabulary
+              </div>
+            </li>
+            <div class="question__divider"></div>
+
+            <li class="question__item">
+              <div class="question__text">
+                <span class="question__sequence">05</span>
+                What level of English is this course for?
+              </div>
+              <div class="show">
+                <img src="./icons/question_item_show_icon.svg" alt="show answer" />
+              </div>
+              <div class="answer__text">Intermediate Strong - Upper-Intermediate - Advanced
+              </div>
+            </li>
+            <div class="question__divider"></div>
+
+            <li class="question__item">
+              <div class="question__text">
+                <span class="question__sequence">06</span>
+                Will I receive a certificate after completing the course?
+              </div>
+              <div class="show">
+                <img src="./icons/question_item_show_icon.svg" alt="show answer" />
+              </div>
+              <div class="answer__text">Intermediate Strong - Upper-Intermediate - Advanced
+              </div>
+            </li>
+            <div class="question__divider"></div>
+
+            <li class="question__item">
+              <div class="question__text">
+                <span class="question__sequence">07</span>
+                Can I take those blocks that I like?
+              </div>
+              <div class="show">
+                <img src="./icons/question_item_show_icon.svg" alt="show answer" />
+              </div>
+              <div class="answer__text">Yes, it's possible to take those blocks that are the most relevant to you
+              </div>
+            </li>
+            <div class="question__divider"></div>
+
+          </ol>
+        </section>
+
+        <!-- <section class="contacts">
+
+        </section> -->
+
       </div>
     </main>
   </body>

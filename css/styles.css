@@ -48,7 +48,7 @@
   /* color: var(--1); */
 }
 
-/* First screen */
+/* The section Main */
 
 .main {
   min-height: 480px;
@@ -121,7 +121,7 @@
   margin-right: 6px;
 }
 
-/* Second screen - Section Why-ness of the course */
+/* The section Why-ness of the course */
 .why {
   margin-top: 36px;
   padding: 28px 24px 10px 28px;
@@ -142,13 +142,17 @@
   margin-top: 22px;
 }
 
-/* Third screen - Section Who is this course for? */
+/* The section Who is this course for? */
 .audience {
   margin-top: 36px;
   /* padding: 0 0 0 28px; */
   min-height: 360px;
   /* border-radius: 20px; */
   /* background-color: var(--6) */
+}
+
+.audience .title {
+  margin-left: 28px;
 }
 
 .audience__item {
@@ -183,7 +187,7 @@
   z-index: 2;
 }
 
-/* Forth screen - Section Why is this course unique? */
+/* The section Why is this course unique? */
 .uniqueness {
   margin-top: 36px;
   padding: 28px 26px 28px 28px;
@@ -215,7 +219,7 @@
   background-repeat: no-repeat;
 }
 
-/* Section After the course */
+/* The section After the course */
 .after {
   margin-top: 35px;
   padding: 28px 18px 18px 28px;
@@ -258,7 +262,7 @@
   font-weight: 600;
 }
 
-/* Sections How does it all go? */
+/* The sections How does it all go? */
 .steps {
   max-height: 495px;
   margin-top: 35px;
@@ -298,7 +302,6 @@
   /* position: relative; */
 }
 
-/* !!! застилизовать номера списка согласно макета */
 .steps__item:nth-child(1) {
   max-width: 188px;
   height: 42px;
@@ -450,7 +453,10 @@
   margin-top: 35px;
 }
 
-/* !! переписать стиль с номерами согласно макета */
+.program .title {
+  margin-left: 28px;
+}
+
 .program__list {
   list-style: none;
   margin-top: 5px;
@@ -500,9 +506,13 @@
   width: 11px;
 }
 
-/* Section The author */
+/* The section The author */
 .author {
   margin-top: 35px;
+}
+
+.author .title {
+  margin-left: 28px;
 }
 
 .author__wrapper {
@@ -601,7 +611,7 @@
   /* color: var(--1); */
 }
 
-/* Section The customers */
+/* The section The customers */
 .customers {
   margin-top: 120px;
   height: 220px;
@@ -693,7 +703,7 @@
   justify-content: center;
 }
 
-/* Section Price */
+/* The section Price */
 .price {
   min-height: 530px;
 }
@@ -788,7 +798,64 @@
   /* color: var(--1); */
 }
 
-/* "./icons/ckeck-light.svg" */
-/* стилизация ромбом каждого элемента li списка */
+/* The section Questions & Answers */
+.questions {
+  /* min-height: ; */
+  margin-top: 35px;
+  width: 100%;
+}
+
+.questions__list {
+  list-style: none;
+  /* margin-top: 5px; */
+  min-height: 370px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+}
+
+.question__item {
+  width: 100%;
+  min-height: 36px;
+  padding: 15px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* font-family: var(--font-family); */
+  font-weight: 400;
+  font-size: 14px;
+  color: #002424;
+  /* color: var(--1); */
+}
+
+.question__sequence {
+  margin-right: 7px;
+  /* font-family: var(--font-family); */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  color: #fbc8cd;
+  /* color: var(--2); */
+}
+
+.question__divider {
+  width: 100%;
+  height: 2px;
+  background-color: #f5f5f5;
+  /* stroke: var(--6); */
+}
+
+.answer__text {
+  display: none;
+  max-width: 280px;
+  min-height: 43px;
+  margin-left: 25px;
+  /* font-family: var(--font-family); */
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 127%;
+  color: #002424;
+  /* color: var(--1); */
+}
 
 /* проверить на сегодня актуальную ширину моб телефонов  */
