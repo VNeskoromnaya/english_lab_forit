@@ -858,4 +858,93 @@
   /* color: var(--1); */
 }
 
+/* The section Contact me */
+.contacts {
+  margin-top: 35px;
+  min-height: 400px;
+  padding: 31px 26px 25px 26px;
+  border-radius: 20px;
+  background-color: #002424;
+  /* background: var(--1); */
+}
+
+.contacts .title_white {
+  text-align: left;
+}
+
+.contacts span {
+  display: block;
+}
+
+.contacts .text {
+  margin-top: 15px;
+  color: #fff;
+  /* color: var(--5); */
+}
+
+.contacts__list {
+  margin-top: 20px;
+  height: 158px;
+  /* width: 290px; */
+  padding: 20px 35px;
+  border: 1.4px solid #e5f8c8;
+  /* border: 1.40px solid var(--3); */
+  border-radius: 14px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+}
+
+.contact__item img {
+  width: 22px;
+  margin-right: 18px;
+}
+
+.contact__desc {
+text-decoration: none;
+/* font-family: var(--font-family); */
+font-weight: 400;
+font-size: 14px;
+line-height: 157%;
+color: #fff;
+/* color: var(--5); */
+}
+
+.footer {
+  margin-top: 22px;
+  height: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* font-family: var(--font-family); */
+font-weight: 400;
+font-size: 10px;
+line-height: 180%;
+color: #fff;
+/* color: var(--5); */
+opacity: 0.6;
+}
+
+.footer span {
+  display: block;
+  width: 130px;
+}
+
+.link_external {
+  display: block;
+  width: 130px;
+  text-decoration: none;
+/* font-family: var(--font-family); */
+font-weight: 400;
+font-size: 10px;
+line-height: 180%;
+color: #fff;
+/* color: var(--5); */
+}
 /* проверить на сегодня актуальную ширину моб телефонов  */
