@@ -6,7 +6,12 @@
     <!-- title  залишаємо такий ??  -->
     <title>English Lab for IT</title>
     <!-- іконка для відображення у браузері -->
-    <!-- <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="/images/mlwicon.png" /> -->
+    <link
+      rel="icon"
+      sizes="16x16 32x32 48x48"
+      type="image/png"
+      href="/icons/logo_for_browser.png"
+    />
     <!-- додати тег опису нашої сторінки -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -16,8 +21,54 @@
         <section class="main">
           <div>
             <img src="icons/logo.svg" alt="logo" class="logo" />
-            <!-- бургер-меню, которое буду создавать с помощью CSS + JS. Пока вставляю иконку, которую нужно будет удалить в будущем. -->
+            <!-- бургер-меню, которое буду создавать с помощью CSS + JS. Пока вставляю иконку, которую нужно будет удалить в будущем. Продумать аниацию с изображением, когда будет открываться бургер-меню, чтоб человек видел, что оно открыто и его нужно закрыть через взаимодействие с измененным элементом -->
             <img src="icons/burger_menu.svg" alt="menu" class="menu_mobile" />
+
+            <!-- заготовка будущего меню, которое открывается нажатием на иконку + JS -->
+            <nav class="menu__wrapper">
+              <ul class="menu__list">
+                <!-- * привязать ссылки-маяки -->
+                <li class="menu__item">
+                  <a href="#whyness">About <span>course</span></a>
+                </li>
+                <li class="menu__item">
+                  <a href="#audience">Who is this <span>course for?</span></a>
+                </li>
+                <li class="menu__item">
+                  <a href="#program">Course <span>program</span></a>
+                </li>
+                <li class="menu__item"><a href="#review">Reviews</a></li>
+                <li class="menu__item"><a href="#price">Pricing</a></li>
+                <div class="menu__divider"></div>
+                <li class="menu__item">
+                  <a href="#contact">Contact</a>
+                  <div class="icons__wrapper">
+                    <a href="mailto:evgenia.slobodyan@gmail.com" target="_blank"
+                      ><img
+                        src="/icons/contacts/bg_light/email_icon_light.svg"
+                        alt="Send me an email"
+                    /></a>
+                    <a href="#" target="_blank"
+                      ><img
+                        src="/icons/contacts/bg_light/telegram_icon_light.svg"
+                        alt="Send a message on Telegram"
+                    /></a>
+                    <a href="#" target="_blank"
+                      ><img
+                        src="/icons/contacts/bg_light/phone_icon_light.svg"
+                        alt="Book a call"
+                    /></a>
+                    <a
+                      href="https://www.instagram.com/english_lab_forit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      target="_blank"
+                      ><img
+                        src="/icons/contacts/bg_light/instagram_icon_light.svg"
+                        alt="Follow on Instagram"
+                    /></a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
           </div>
 
           <h1 class="title title__main title__bold">
@@ -49,7 +100,7 @@
           <button class="btn">Learn more</button>
         </section>
 
-        <section class="why">
+        <section class="why" id="whyness">
           <h2 class="title">
             Why-ness <span class="title__bold">of the course</span>
           </h2>
@@ -63,7 +114,7 @@
           </p>
         </section>
 
-        <section class="audience">
+        <section class="audience" id="audience">
           <h2 class="title">
             Who is this <span class="title__bold">course for?</span>
           </h2>
@@ -184,7 +235,7 @@
           </ul>
         </section>
 
-        <section class="program">
+        <section class="program" id="program">
           <h2 class="title">
             course
             <span class="title__bold">program</span>
@@ -192,114 +243,223 @@
 
           <ol class="program__list">
             <!-- элемент li будет состоять из 1 - номер, 2 - текст , 3 - стрелка в низ -->
+
+            <!-- 
+            <li class="question__item">
+              <div class="question__text">
+                <span class="question__sequence">07</span>
+                Can I take those blocks that I like?
+              </div>
+              <div class="show">
+                <img
+                  src="./icons/question_item_show_icon.svg"
+                  alt="show answer"
+                />
+              </div>
+              <div class="answer__text">
+                Yes, it's possible to take those blocks that are the most
+                relevant to you
+              </div>
+            </li>
+             -->
             <li class="program__item">
-              <div class="program__text">
+              <div class="topic">
                 <span class="program__number">01</span>
                 Cross cultural communication
               </div>
               <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
               </div>
+              <ul class="topic__detail">
+                <li>High/low context cultures</li>
+                <li>Small talk</li>
+                <li>Business writing</li>
+                <li>Gestures</li>
+                <li>Understanding accents</li>
+              </ul>
             </li>
 
             <li class="program__item">
-              <div class="program__text">
+              <div class="topic">
                 <span class="program__number">02</span>Work of the future
               </div>
               <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
               </div>
+              <ul class="topic__detail">
+                <li>Future professions</li>
+                <li>Teamwork</li>
+                <li>Motivation</li>
+                <li>Managing companies/projects</li>
+                <li>Business Meetings and Presentations</li>
+              </ul>
             </li>
 
             <li class="program__item">
-              <div class="program__text">
+              <div class="topic">
                 <span class="program__number">03</span>Performance
               </div>
               <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
               </div>
+              <ul class="topic__detail">
+                <li>Feelings</li>
+                <li>Job Interview</li>
+                <li>Performance metrics/review</li>
+                <li>Feedback and Evaluation</li>
+                <li>Time management</li>
+                <li>SMART Goal Setting</li>
+              </ul>
             </li>
 
             <li class="program__item">
-              <div class="program__text">
+              <div class="topic">
                 <span class="program__number">04</span>Negotiations
               </div>
               <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
               </div>
+              <ul class="topic__detail">
+                <li>Negotiations. Types of negotiations</li>
+                <li>Conflicts</li>
+                <li>Conformity / Non-conformity</li>
+                <li>Failures</li>
+                <li>Solutions</li>
+                <li>PRES / ICE method</li>
+              </ul>
             </li>
 
             <li class="program__item">
-              <div class="program__text">
+              <div class="topic">
                 <span class="program__number">05</span>Customer service
               </div>
               <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
               </div>
+              <ul class="topic__detail">
+                <li>Customer loyalty and LTV</li>
+                <li>Maslow's Pyramid of needs & Pyramid of customer needs</li>
+                <li>Types of clients</li>
+                <li>Complaints</li>
+                <li>L.A.S.T method</li>
+              </ul>
             </li>
 
             <li class="program__item">
-              <div class="program__text">
+              <div class="topic">
                 <span class="program__number">06</span>Marketing and Sales
               </div>
               <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
               </div>
+              <ul class="topic__detail">
+                <li>Advertising</li>
+                <li>Going viral</li>
+                <li>Marketing trends</li>
+                <li>Neuromarketing</li>
+                <li>Sales</li>
+                <li>Pitching</li>
+              </ul>
             </li>
 
             <li class="program__item">
-              <div class="program__text">
+              <div class="topic">
                 <span class="program__number">07</span>Media
               </div>
               <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
               </div>
+              <ul class="topic__detail">
+                <li>Social Media</li>
+                <li>Sources of information</li>
+                <li>News | Understanding news</li>
+                <li>News Blunders</li>
+                <li>Hoaxes</li>
+                <li>Headlines | Understanding headlines</li>
+              </ul>
             </li>
 
             <li class="program__item">
-              <div class="program__text">
+              <div class="topic">
                 <span class="program__number">08</span>Entrepreneurship +
                 Innovation
               </div>
               <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
               </div>
+              <ul class="topic__detail">
+                <li>Innovation</li>
+                <li>Creativity</li>
+                <li>Bloom's taxonomy</li>
+                <li>Design thinking, lateral thinking and mind mapping</li>
+                <li>Brainstorming and ideation</li>
+                <li>New trends and ideas</li>
+                <li>Start - ups</li>
+              </ul>
             </li>
 
             <li class="program__item">
-              <div class="program__text">
+              <div class="topic">
                 <span class="program__number">09</span>Digital Transformation
               </div>
               <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
               </div>
+              <ul class="topic__detail">
+                <li>Does science matter?</li>
+                <li>Technologies</li>
+                <li>AI</li>
+                <li>E - commerce</li>
+              </ul>
             </li>
 
             <li class="program__item">
-              <div class="program__text">
+              <div class="topic">
                 <span class="program__number">10</span>Crisis and Risk
               </div>
               <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
               </div>
+              <ul class="topic__detail">
+                <li>Changes</li>
+                <li>Risk management</li>
+                <li>SWOT analysis</li>
+                <li>Investments</li>
+                <li>New currencies</li>
+                <li>Finance</li>
+                <li>Strategic planning</li>
+              </ul>
             </li>
 
             <li class="program__item">
-              <div class="program__text">
+              <div class="topic">
                 <span class="program__number">11</span>L&D
               </div>
               <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
               </div>
+              <ul class="topic__detail">
+                <li>Imagination and inspiration</li>
+                <li>Ranting/ raving</li>
+                <li>Education</li>
+                <li>Self-growth</li>
+              </ul>
             </li>
 
             <li class="program__item">
-              <div class="program__text">
+              <div class="topic">
                 <span class="program__number">12</span>Mindsetting
               </div>
               <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
               </div>
+              <ul class="topic__detail">
+                <li>Time</li>
+                <li>Stress and relaxation</li>
+                <li>Burnout</li>
+                <li>Mind</li>
+                <li>Critical thinking</li>
+              </ul>
             </li>
           </ol>
         </section>
@@ -341,7 +501,7 @@
           </div>
         </section>
 
-        <section class="customers">
+        <section class="customers" id="review">
           <!-- !! вопрос к заказчику - хочет ли он, чтоб это была не картинка, а ссылка перехода на сайт клиента -->
           <img
             src="./icons/customers/proCoders_logo.svg"
@@ -493,7 +653,7 @@
           </div>
         </section>
 
-        <section class="price">
+        <section class="price" id="price">
           <ul class="price__list">
             <!-- * моя логика: если выделен блок , цвет блока меняется на черный , область стрелки на белый, кнопка на розовый #fbc8cd (var(--2)) (скорее всего через JS)? -->
             <!-- * кнопка у нас ведет к записи или написать, то есть нужео будет подтянуть ссылку или отправку данных -->
@@ -655,7 +815,7 @@
           </ol>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contact">
           <h2 class="title title_white">
             Any questions?
             <span class="title__bold title_white">Contact me</span>
@@ -665,33 +825,44 @@
             opportunities together
           </p>
 
-          <!-- * привязать ссылки к контактам; продумать анимацию при взаимодействии с ссылками -->
+          <!-- * привязать ссылки к контактам; продумать анимацию при взаимодействии с ссылками. -->
           <ol class="contacts__list">
             <li class="contact__item">
               <img
-                src="./icons/contacts/email_icon.svg"
+                src="./icons/contacts/bg_dark/email_icon_dark.svg"
                 alt="Send me an email"
               />
-              <a href="mailto:evgenia.slobodyan@gmail.com" class="contact__desc">Send me an email</a>
+              <a
+                href="mailto:evgenia.slobodyan@gmail.com"
+                target="_blank"
+                class="contact__desc"
+                >Send me an email
+              </a>
             </li>
             <li class="contact__item">
               <img
-                src="./icons/contacts/telegram_icon.svg"
+                src="./icons/contacts/bg_dark/telegram_icon_dark.svg"
                 alt="Send a message on Telegram"
               />
-              <a href="#" class="contact__desc">Send a message on Telegram</a>
-            </li>
-            <li class="contact__item">
-              <img src="./icons/contacts/phone_icon.svg" alt="Book a call" />
-              <a href="#" class="contact__desc">Book a call</a>
+              <a href="#" target="_blank" class="contact__desc"
+                >Send a message on Telegram</a
+              >
             </li>
             <li class="contact__item">
               <img
-                src="./icons/contacts/instagram_icon.svg"
+                src="./icons/contacts/bg_dark/phone_icon_dark.svg"
+                alt="Book a call"
+              />
+              <a href="#" target="_blank" class="contact__desc">Book a call</a>
+            </li>
+            <li class="contact__item">
+              <img
+                src="./icons/contacts/bg_dark/instagram_icon_dark.svg"
                 alt="Follow on Instagram"
               />
               <a
                 href="https://www.instagram.com/english_lab_forit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
                 class="contact__desc"
                 >Follow on Instagram</a
               >
@@ -701,11 +872,15 @@
           <div class="footer">
             <span>&copy;All Rights Reserved, 2024</span>
             <!-- * добавить ccылку на внешний документ или страницу с информацией о правилах оплаты и возврата -->
-            <a href="#" class="link_external">Payments and refunds</a>
+            <a href="#" target="_blank" class="link_external"
+              >Payments and refunds</a
+            >
             <!-- * добавить ccылку на внешний документ или страницу с информацией о Terms and conditions -->
-            <a href="#" class="link_external">Terms and conditions</a>
+            <a href="#" target="_blank" class="link_external"
+              >Terms and conditions</a
+            >
             <!-- * добавить ccылку на внешний документ или страницу с информацией о Privacy policy -->
-            <a href="#" class="link_external">Privacy policy</a>
+            <a href="#" target="_blank" class="link_external">Privacy policy</a>
           </div>
         </section>
       </div>
