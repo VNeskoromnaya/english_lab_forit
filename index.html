@@ -12,14 +12,43 @@
       type="image/png"
       href="/icons/logo_for_browser.png"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- додати тег опису нашої сторінки -->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script type="text/javascript" src="/js/index.js"></script>
   </head>
   <body>
     <main>
       <div class="wrapper">
+
+        <div class="contact-me-wrapper">
+          <div class="float-icon">
+            <div class="pulse"></div>
+            <div class="icon-wrapper">
+              <i></i>
+            </div>
+          </div>
+          <div class="icon-menu">
+            <ul>
+              <li class="telegram">
+                <a href="https://t.me/jenny_slb" target="_blank">Telegram</a>
+              </li>
+              <li class="whatsapp">
+                <a href="https://wa.me/48698157670" target="_blank">WhatsApp</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <section class="main">
-          <div>
+          <div class="section__head">
             <img src="icons/logo.svg" alt="logo" class="logo" />
             <!-- бургер-меню, которое буду создавать с помощью CSS + JS. Пока вставляю иконку, которую нужно будет удалить в будущем. Продумать аниацию с изображением, когда будет открываться бургер-меню, чтоб человек видел, что оно открыто и его нужно закрыть через взаимодействие с измененным элементом -->
             <img src="icons/burger_menu.svg" alt="menu" class="menu_mobile" />
@@ -48,18 +77,18 @@
                         src="/icons/contacts/bg_light/email_icon_light.svg"
                         alt="Send me an email"
                     /></a>
-                    <a href="#" target="_blank"
+                    <a href="https://t.me/jenny_slb" target="_blank"
                       ><img
                         src="/icons/contacts/bg_light/telegram_icon_light.svg"
                         alt="Send a message on Telegram"
                     /></a>
-                    <a href="#" target="_blank"
-                      ><img
-                        src="/icons/contacts/bg_light/phone_icon_light.svg"
-                        alt="Book a call"
+                    <a href="https://wa.me/48698157670" target="_blank"
+                      ><img class="shrinked-img dark" width="22px"
+                      src="/icons/contacts/bg_dark/whatsapp_icon_dark2.svg"
+                        alt="Send a message on WhatsApp"
                     /></a>
                     <a
-                      href="https://www.instagram.com/english_lab_forit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      href="https://www.instagram.com/english_forit?igsh=MXd3eHRzNDBtemhjMQ=="
                       target="_blank"
                       ><img
                         src="/icons/contacts/bg_light/instagram_icon_light.svg"
@@ -93,11 +122,31 @@
               />personalized approach
             </li>
             <li class="details__item">
-              <img src="icons/duration.svg" alt="duration" />10 - 12 months
+              <img src="icons/duration.svg" alt="duration" />1 month = 1 block
             </li>
           </ul>
 
-          <button class="btn">Learn more</button>
+          <a href="#program">
+            <button class="btn">Learn more</button>
+          </a>
+
+          <!-- <a href="#price">
+            <button class="btn">Pricing</button>
+          </a> -->
+
+          <div class="decor-wrapper">
+            <div class="decor">
+              <div class="decor-item"></div>
+              <div class="decor-item"></div>
+              <div class="decor-item"></div>
+              <div class="decor-item"></div>
+              <div class="decor-item"></div>
+              <div class="decor-item"></div>
+              <div class="decor-item"></div>
+              <div class="decor-item"></div>
+            </div>
+          </div>
+          
         </section>
 
         <section class="why" id="whyness">
@@ -171,27 +220,27 @@
 
           <ul class="after__list">
             <li class="after__item text">
-              <span class="text_bold">Develop confidence</span> in using English
+              <span class="text_semi_bold">Develop confidence</span> in using English
               in the most common working situations
             </li>
             <li class="after__item text">
-              <span class="text_bold">Elevate</span> your
-              <span class="text_bold">career prospects</span> through the
+              <span class="text_semi_bold">Elevate</span> your
+              <span class="text_semi_bold">career prospects</span> through the
               enhancement of your communication skills
             </li>
             <li class="after__item text">
-              <span class="text_bold">Reduce cultural misunderstandings</span>
+              <span class="text_semi_bold">Reduce cultural misunderstandings</span>
               when communicating with international clients and customers
             </li>
             <li class="after__item text">
-              <span class="text_bold">Learn</span> how to give
-              <span class="text_bold">feedback</span>, use method
-              <span class="text_bold">PRES</span> and
-              <span class="text_bold">ICE</span> in negotiations, set
+              <span class="text_semi_bold">Learn</span> how to give
+              <span class="text_semi_bold">feedback</span>, use method
+              <span class="text_semi_bold">PRES</span> and
+              <span class="text_semi_bold">ICE</span> in negotiations, set
               <span>SMART</span> goals
             </li>
             <li class="after__item text">
-              <span class="text_bold">Gain new knowledge</span> in the spheres
+              <span class="text_semi_bold">Gain new knowledge</span> in the spheres
               of sales & marketing, entrepreneurship, L&D
             </li>
           </ul>
@@ -239,37 +288,18 @@
           <h2 class="title">
             course
             <span class="title__bold">program</span>
+            <small>(blocks)</small>
           </h2>
 
           <ol class="program__list">
-            <!-- элемент li будет состоять из 1 - номер, 2 - текст , 3 - стрелка в низ -->
-
-            <!-- 
-            <li class="question__item">
-              <div class="question__text">
-                <span class="question__sequence">07</span>
-                Can I take those blocks that I like?
-              </div>
-              <div class="show">
-                <img
-                  src="./icons/question_item_show_icon.svg"
-                  alt="show answer"
-                />
-              </div>
-              <div class="answer__text">
-                Yes, it's possible to take those blocks that are the most
-                relevant to you
-              </div>
-            </li>
-             -->
             <li class="program__item">
               <div class="topic">
-                <span class="program__number">01</span>
+                <!-- <span class="program__number">01</span> -->
                 Cross cultural communication
               </div>
-              <div class="open">
+              <!-- <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
-              </div>
+              </div> -->
               <ul class="topic__detail">
                 <li>High/low context cultures</li>
                 <li>Small talk</li>
@@ -281,11 +311,12 @@
 
             <li class="program__item">
               <div class="topic">
-                <span class="program__number">02</span>Work of the future
+                <!-- <span class="program__number">02</span> -->
+                Work of the future
               </div>
-              <div class="open">
+              <!-- <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
-              </div>
+              </div> -->
               <ul class="topic__detail">
                 <li>Future professions</li>
                 <li>Teamwork</li>
@@ -297,11 +328,12 @@
 
             <li class="program__item">
               <div class="topic">
-                <span class="program__number">03</span>Performance
+                <!-- <span class="program__number">03</span> -->
+                Performance
               </div>
-              <div class="open">
+              <!-- <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
-              </div>
+              </div> -->
               <ul class="topic__detail">
                 <li>Feelings</li>
                 <li>Job Interview</li>
@@ -314,11 +346,12 @@
 
             <li class="program__item">
               <div class="topic">
-                <span class="program__number">04</span>Negotiations
+                <!-- <span class="program__number">04</span> -->
+                Negotiations
               </div>
-              <div class="open">
+              <!-- <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
-              </div>
+              </div> -->
               <ul class="topic__detail">
                 <li>Negotiations. Types of negotiations</li>
                 <li>Conflicts</li>
@@ -331,11 +364,12 @@
 
             <li class="program__item">
               <div class="topic">
-                <span class="program__number">05</span>Customer service
+                <!-- <span class="program__number">05</span> -->
+                Customer service
               </div>
-              <div class="open">
+              <!-- <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
-              </div>
+              </div> -->
               <ul class="topic__detail">
                 <li>Customer loyalty and LTV</li>
                 <li>Maslow's Pyramid of needs & Pyramid of customer needs</li>
@@ -347,11 +381,12 @@
 
             <li class="program__item">
               <div class="topic">
-                <span class="program__number">06</span>Marketing and Sales
+                <!-- <span class="program__number">06</span> -->
+                Marketing and Sales
               </div>
-              <div class="open">
+              <!-- <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
-              </div>
+              </div> -->
               <ul class="topic__detail">
                 <li>Advertising</li>
                 <li>Going viral</li>
@@ -364,11 +399,12 @@
 
             <li class="program__item">
               <div class="topic">
-                <span class="program__number">07</span>Media
+                <!-- <span class="program__number">07</span> -->
+                Media
               </div>
-              <div class="open">
+              <!-- <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
-              </div>
+              </div> -->
               <ul class="topic__detail">
                 <li>Social Media</li>
                 <li>Sources of information</li>
@@ -381,12 +417,12 @@
 
             <li class="program__item">
               <div class="topic">
-                <span class="program__number">08</span>Entrepreneurship +
-                Innovation
+                <!-- <span class="program__number">08</span> -->
+                Entrepreneurship + Innovation
               </div>
-              <div class="open">
+              <!-- <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
-              </div>
+              </div> -->
               <ul class="topic__detail">
                 <li>Innovation</li>
                 <li>Creativity</li>
@@ -400,11 +436,12 @@
 
             <li class="program__item">
               <div class="topic">
-                <span class="program__number">09</span>Digital Transformation
+                <!-- <span class="program__number">09</span> -->
+                Digital Transformation
               </div>
-              <div class="open">
+              <!-- <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
-              </div>
+              </div> -->
               <ul class="topic__detail">
                 <li>Does science matter?</li>
                 <li>Technologies</li>
@@ -415,11 +452,12 @@
 
             <li class="program__item">
               <div class="topic">
-                <span class="program__number">10</span>Crisis and Risk
+                <!-- <span class="program__number">10</span> -->
+                Crisis and Risk
               </div>
-              <div class="open">
+              <!-- <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
-              </div>
+              </div> -->
               <ul class="topic__detail">
                 <li>Changes</li>
                 <li>Risk management</li>
@@ -433,11 +471,12 @@
 
             <li class="program__item">
               <div class="topic">
-                <span class="program__number">11</span>L&D
+                <!-- <span class="program__number">11</span> -->
+                L&D
               </div>
-              <div class="open">
+              <!-- <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
-              </div>
+              </div> -->
               <ul class="topic__detail">
                 <li>Imagination and inspiration</li>
                 <li>Ranting/ raving</li>
@@ -448,11 +487,12 @@
 
             <li class="program__item">
               <div class="topic">
-                <span class="program__number">12</span>Mindsetting
+                <!-- <span class="program__number">12</span> -->
+                Mindsetting
               </div>
-              <div class="open">
+              <!-- <div class="open">
                 <img src="./icons/arrow_down.svg" alt="open" />
-              </div>
+              </div> -->
               <ul class="topic__detail">
                 <li>Time</li>
                 <li>Stress and relaxation</li>
@@ -531,15 +571,15 @@
 
         <section class="feedback">
           <div class="feedback__wrapper">
-            <div class="feedback__card">
+            <div class="feedback__card current">
               <div class="card__header">
                 <img
                   src="./icons/students/yana_avatar.png"
-                  alt="Yana, Pre-Sales Manager for the company ProCoders"
+                  alt="Yana, Pre-Sales Manager for the company Promodo"
                   class="avatar"
                 />
                 <div class="avatar__info">
-                  Yana, Pre-Sales Manager, <span>ProCoders</span>
+                  Yana, Pre-Sales Manager, <span>Promodo</span>
                 </div>
               </div>
               <div class="divider"></div>
@@ -550,8 +590,7 @@
                 our speaking skills.
               </p>
             </div>
-            <!-- заготовка для слайдера отзывов -->
-            <!-- <div class="feedback__card">
+            <div class="feedback__card">
               <div class="card__header">
                 <img
                   src="./icons/students/alex_avatar.png"
@@ -569,16 +608,16 @@
                 towards the next level. Email writing is the best. Very useful
                 in my job.
               </p>
-            </div> -->
-            <!-- <div class="feedback__card">
+            </div>
+            <div class="feedback__card">
               <div class="card__header">
                 <img
                   src="./icons/students/jaroslav_avatar.png"
-                  alt="Jaroslav, Project Manager for the company Ein-des-ein"
+                  alt="Yaroslav, Project Manager for the company Ein-des-ein"
                   class="avatar"
                 />
                 <div class="avatar__info">
-                  Jaroslav, Project Manager,<span>Ein-des-ein</span>
+                  Yaroslav, Project Manager,<span>Ein-des-ein</span>
                 </div>
               </div>
               <div class="divider"></div>
@@ -591,8 +630,8 @@
                 everything in a way that's easy to understand, even complex
                 topics. I highly recommend these classes!
               </p>
-            </div> -->
-            <!-- <div class="feedback__card">
+            </div>
+            <div class="feedback__card">
               <div class="card__header">
                 <img
                   src="./icons/students/viktoria_avatar.png"
@@ -609,8 +648,8 @@
                 interesting and relevant. The only thing I would like to add is
                 more exercises that would help memorise new words.
               </p>
-            </div> -->
-            <!-- <div class="feedback__card">
+            </div>
+            <div class="feedback__card">
               <div class="card__header">
                 <img
                   src="./icons/students/ann_avatar.png"
@@ -627,14 +666,14 @@
                 interesting questions to discuss. All of tasks are relevant,
                 either listening or vocabulary ones;)
               </p>
-            </div> -->
-            <!-- <div class="feedback__card">
+            </div>
+            <div class="feedback__card">
               <div class="card__header">
                 <img
                   src="./icons/students/kate_avatar.png"
                   alt="Kate, Customer Support Team Lead for the company Smart Project" class="avatar"
                 />
-                <div class="avatar__info">Kate, Customer Support Team Lead, <span">Smart Project</span>
+                <div class="avatar__info">Kate, Customer Support Team Lead, <span>Smart Project</span>
                 </div>
               </div>
               <div class="divider"></div>
@@ -642,13 +681,17 @@
                 Interesting topics and specialized vocabulary, new knowledge and
                 personal growth. This is exactly what I need.
               </p>
-            </div> -->
+            </div>
 
             <!-- перелистывание слайдера -->
-            <div class="feedback-slider">
-              <div class="feedback-slider__arrow">
-                <img src="./icons/slider/arrow_left.svg" alt="" />
-              </div>
+            
+          </div>
+          <div class="feedback-slider">
+            <div class="feedback-slider__arrow prev">
+              <img src="./icons/slider/arrow_left.svg" alt="" />
+            </div>
+            <div class="feedback-slider__arrow next">
+              <img src="./icons/slider/arrow_left.svg" alt="" />
             </div>
           </div>
         </section>
@@ -658,28 +701,60 @@
             <!-- * моя логика: если выделен блок , цвет блока меняется на черный , область стрелки на белый, кнопка на розовый #fbc8cd (var(--2)) (скорее всего через JS)? -->
             <!-- * кнопка у нас ведет к записи или написать, то есть нужео будет подтянуть ссылку или отправку данных -->
             <li class="price__item">
-              <div class="rate">20$ <span>/1 hour</span></div>
+              <div class="rate">25$ <span><a href="#program">block</a></span></div>
               <p class="format__info">
-                <img src="./icons/ckeck-dark.svg" alt="" />Individually or 1 -
-                on - 1
+                <img src="./icons/check-dark.svg" alt="" />Self learner
               </p>
-              <button class="enroll">Enroll now</button>
+              <!-- <small>
+                
+              </small> -->
+              <ul class="price__details">
+                <li>Presentations with video and audio tasks, exercises to master the topic learned</li>
+                <li>Private Telegram Chat for questions</li>
+                <li>Access to materials</li>
+              </ul>
+              <a href="https://t.me/jenny_slb" target="_blank" class="button__wrapper">
+                <button class="enroll">Enroll now</button>
+              </a>
             </li>
             <li class="price__item">
-              <div class="rate">25$ <span>/1 hour</span></div>
+              <div class="rate">85$ <span><a href="#program">block</a></span></div>
               <p class="format__info">
-                <img src="./icons/ckeck-dark.svg" alt="" />Mini group: 2 people
-                max
+                <img src="./icons/check-dark.svg" alt="" />Advanced Learner
               </p>
-              <button class="enroll">Enroll now</button>
+              <!-- <small>
+                <a href="#program">1 block to choose</a>
+              </small> -->
+              <ul class="price__details">
+                <li>Presentations with video and audio tasks, exercises to master the topic learned</li>
+                <li>Private Telegram Chat for questions</li>
+                <li>Access to materials</li>
+                <li>4 coaching sessions with Yevheniia</li>
+              </ul>
+              <a href="https://t.me/jenny_slb" target="_blank" class="button__wrapper">
+                <button class="enroll">Enroll now</button>
+              </a>
             </li>
             <li class="price__item">
-              <div class="rate">30$ <span>/1 hour</span></div>
+              <div class="rate">165$ <span><a href="#program">block</a></span></div>
               <p class="format__info">
-                <img src="./icons/ckeck-dark.svg" alt="" />Corporate learning: 3
-                people+
+                <img src="./icons/check-dark.svg" alt="" />Proficient Learner
               </p>
-              <button class="enroll">Enroll now</button>
+              <!-- <small>
+                <a href="#program">1 block to choose</a>
+              </small> -->
+              <ul class="price__details">
+                <li>Presentations with video and audio tasks, exercises to master the topic learned</li>
+                <li>Private Telegram Chat for questions</li>
+                <li>Access to materials</li>
+                <li>Setting SMART goals in learning</li>
+                <li>Weekly Meeting Planning</li>
+                <li>8 coaching sessions with Yevheniia</li>
+                <li>Feedback on the progress</li>
+              </ul>
+              <a href="https://t.me/jenny_slb" target="_blank" class="enroll">
+                Enroll now
+              </a>
             </li>
           </ul>
         </section>
@@ -688,130 +763,128 @@
           <ol class="questions__list">
             <!-- элемент li будет состоять из 1 - номер, 2 - текст , 3 - плюсик, который при нажатии будет открывать скрытый текст -->
             <!-- при нажатии на "+" открывается скрытый текст и при этом "+" меняется на "-", после нажания на "-" текст скрывается и "-" меняется на "+" -->
+            
             <li class="question__item">
               <div class="question__text">
-                <span class="question__sequence">01</span>
+                <!-- <span class="question__sequence">01</span> -->
                 How do I pay for the course?
               </div>
-              <div class="show">
+              <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
-              </div>
+              </div> -->
               <div class="answer__text">
-                The payment is due monthly onto my card or account after the
-                final lesson of the current month, invoice provided on request
+                The payment is done monthly by the 5th day of the current month on 100% prepayment condition to the PE bank account. Invoice can be provided on request
               </div>
             </li>
-            <div class="question__divider"></div>
+            <!-- <div class="question__divider"></div> -->
 
             <li class="question__item">
               <div class="question__text">
-                <span class="question__sequence">02</span>
+                <!-- <span class="question__sequence">02</span> -->
                 How long does the course last?
               </div>
-              <div class="show">
+              <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
-              </div>
+              </div> -->
               <div class="answer__text">
-                It all depends on the learners' goals, abilities and frequency
-                of meetings. Counting on 2 meetings per week, the course may
-                endure for 10 - 12 month
+                On average one block is covered within a month, though it all depends on the learners&amp; goals, abilities and frequency of meetings
               </div>
             </li>
-            <div class="question__divider"></div>
+            <!-- <div class="question__divider"></div> -->
 
             <li class="question__item">
               <div class="question__text">
-                <span class="question__sequence">03</span>
+                <!-- <span class="question__sequence">03</span> -->
                 How do I know about my progress?
               </div>
-              <div class="show">
+              <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
-              </div>
+              </div> -->
               <div class="answer__text">
                 There are tests on each block to check the learners' progress
               </div>
             </li>
-            <div class="question__divider"></div>
+            <!-- <div class="question__divider"></div> -->
 
             <li class="question__item">
               <div class="question__text">
-                <span class="question__sequence">04</span>
+                <!-- <span class="question__sequence">04</span> -->
                 Is there any grammar on the course?
               </div>
-              <div class="show">
+              <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
-              </div>
+              </div> -->
               <div class="answer__text">
                 There are 2-3 grammar topics to revise in each block and still
                 the course focuses mostly on speaking and learning new
                 vocabulary
               </div>
             </li>
-            <div class="question__divider"></div>
+            <!-- <div class="question__divider"></div> -->
 
             <li class="question__item">
               <div class="question__text">
-                <span class="question__sequence">05</span>
+                <!-- <span class="question__sequence">05</span> -->
                 What level of English is this course for?
               </div>
-              <div class="show">
+              <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
-              </div>
+              </div> -->
               <div class="answer__text">
                 Intermediate Strong - Upper-Intermediate - Advanced
               </div>
             </li>
-            <div class="question__divider"></div>
+            <!-- <div class="question__divider"></div> -->
 
             <li class="question__item">
               <div class="question__text">
-                <span class="question__sequence">06</span>
+                <!-- <span class="question__sequence">06</span> -->
                 Will I receive a certificate after completing the course?
               </div>
-              <div class="show">
+              <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
-              </div>
+              </div> -->
               <div class="answer__text">
-                Intermediate Strong - Upper-Intermediate - Advanced
+                I do not issue certificates yet
               </div>
             </li>
-            <div class="question__divider"></div>
+            <!-- <div class="question__divider"></div> -->
 
             <li class="question__item">
               <div class="question__text">
-                <span class="question__sequence">07</span>
+                <!-- <span class="question__sequence">07</span> -->
                 Can I take those blocks that I like?
               </div>
-              <div class="show">
+              <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
-              </div>
+              </div> -->
               <div class="answer__text">
                 Yes, it's possible to take those blocks that are the most
                 relevant to you
               </div>
             </li>
-            <div class="question__divider"></div>
+            <!-- <div class="question__divider"></div> -->
           </ol>
         </section>
 
@@ -844,16 +917,16 @@
                 src="./icons/contacts/bg_dark/telegram_icon_dark.svg"
                 alt="Send a message on Telegram"
               />
-              <a href="#" target="_blank" class="contact__desc"
+              <a href="https://t.me/jenny_slb" target="_blank" class="contact__desc"
                 >Send a message on Telegram</a
               >
             </li>
             <li class="contact__item">
-              <img
-                src="./icons/contacts/bg_dark/phone_icon_dark.svg"
-                alt="Book a call"
+              <img class="shrinked-img light"
+                src="/icons/contacts/bg_dark/whatsapp_icon_dark.svg"
+                alt="Send a message on WhatsApp"
               />
-              <a href="#" target="_blank" class="contact__desc">Book a call</a>
+              <a href="https://wa.me/48698157670" target="_blank" class="contact__desc">Send a message on WhatsApp</a>
             </li>
             <li class="contact__item">
               <img
@@ -861,7 +934,7 @@
                 alt="Follow on Instagram"
               />
               <a
-                href="https://www.instagram.com/english_lab_forit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                href="https://www.instagram.com/english_forit?igsh=MXd3eHRzNDBtemhjMQ=="
                 target="_blank"
                 class="contact__desc"
                 >Follow on Instagram</a
@@ -870,17 +943,13 @@
           </ol>
 
           <div class="footer">
-            <span>&copy;All Rights Reserved, 2024</span>
+            <span>&copy;All Rights Reserved, 2025</span>
             <!-- * добавить ccылку на внешний документ или страницу с информацией о правилах оплаты и возврата -->
-            <a href="#" target="_blank" class="link_external"
-              >Payments and refunds</a
-            >
+            <a href="javascript:void(0)" target="_blank" class="link_external">Payments and refunds</a>
             <!-- * добавить ccылку на внешний документ или страницу с информацией о Terms and conditions -->
-            <a href="#" target="_blank" class="link_external"
-              >Terms and conditions</a
-            >
+            <a href="javascript:void(0)" target="_blank" class="link_external">Terms and conditions</a>
             <!-- * добавить ccылку на внешний документ или страницу с информацией о Privacy policy -->
-            <a href="#" target="_blank" class="link_external">Privacy policy</a>
+            <a href="javascript:void(0)" target="_blank" class="link_external">Privacy policy</a>
           </div>
         </section>
       </div>

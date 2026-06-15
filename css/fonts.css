@@ -1,0 +1,7 @@
+:root {
+    --font-regular: 400 1rem "Poppins";
+    --font-bold: 700 1rem "Poppins";
+    --font-semi-bold: 600 1rem "Poppins";
+    --font-bold-italic: italic 700 1rem "Poppins";
+    --font-semi-bold-italic: italic 600 1rem "Poppins";
+}
