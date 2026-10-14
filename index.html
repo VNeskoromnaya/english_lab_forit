@@ -1,958 +1,885 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- title  залишаємо такий ??  -->
-    <title>English Lab for IT</title>
-    <!-- іконка для відображення у браузері -->
-    <link
-      rel="icon"
-      sizes="16x16 32x32 48x48"
-      type="image/png"
-      href="/icons/logo_for_browser.png"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- title  залишаємо такий ??  -->
+  <title>English Lab for IT</title>
+  <!-- іконка для відображення у браузері -->
+  <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="/icons/logo_for_browser.png" />
 
-    <!-- додати тег опису нашої сторінки -->
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/animations.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <script type="text/javascript" src="/js/index.js"></script>
-  </head>
-  <body>
-    <main>
-      <div class="wrapper">
+  <!-- додати тег опису нашої сторінки -->
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
-        <div class="contact-me-wrapper">
-          <div class="float-icon">
-            <div class="pulse"></div>
-            <div class="icon-wrapper">
-              <i></i>
-            </div>
-          </div>
-          <div class="icon-menu">
-            <ul>
-              <li class="telegram">
-                <a href="https://t.me/jenny_slb" target="_blank">Telegram</a>
-              </li>
-              <li class="whatsapp">
-                <a href="https://wa.me/48698157670" target="_blank">WhatsApp</a>
-              </li>
-            </ul>
+  <script type="text/javascript" src="/js/index.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="wrapper">
+
+      <div class="contact-me-wrapper">
+        <div class="float-icon">
+          <div class="pulse"></div>
+          <div class="icon-wrapper">
+            <i></i>
           </div>
         </div>
-
-        <section class="main">
-          <div class="section__head">
-            <img src="icons/logo.svg" alt="logo" class="logo" />
-            <!-- бургер-меню, которое буду создавать с помощью CSS + JS. Пока вставляю иконку, которую нужно будет удалить в будущем. Продумать аниацию с изображением, когда будет открываться бургер-меню, чтоб человек видел, что оно открыто и его нужно закрыть через взаимодействие с измененным элементом -->
-            <img src="icons/burger_menu.svg" alt="menu" class="menu_mobile" />
-
-            <!-- заготовка будущего меню, которое открывается нажатием на иконку + JS -->
-            <nav class="menu__wrapper">
-              <ul class="menu__list">
-                <!-- * привязать ссылки-маяки -->
-                <li class="menu__item">
-                  <a href="#whyness">About <span>course</span></a>
-                </li>
-                <li class="menu__item">
-                  <a href="#audience">Who is this <span>course for?</span></a>
-                </li>
-                <li class="menu__item">
-                  <a href="#program">Course <span>program</span></a>
-                </li>
-                <li class="menu__item"><a href="#review">Reviews</a></li>
-                <li class="menu__item"><a href="#price">Pricing</a></li>
-                <div class="menu__divider"></div>
-                <li class="menu__item">
-                  <a href="#contact">Contact</a>
-                  <div class="icons__wrapper">
-                    <a href="mailto:evgenia.slobodyan@gmail.com" target="_blank"
-                      ><img
-                        src="/icons/contacts/bg_light/email_icon_light.svg"
-                        alt="Send me an email"
-                    /></a>
-                    <a href="https://t.me/jenny_slb" target="_blank"
-                      ><img
-                        src="/icons/contacts/bg_light/telegram_icon_light.svg"
-                        alt="Send a message on Telegram"
-                    /></a>
-                    <a href="https://wa.me/48698157670" target="_blank"
-                      ><img class="shrinked-img dark" width="22px"
-                      src="/icons/contacts/bg_dark/whatsapp_icon_dark2.svg"
-                        alt="Send a message on WhatsApp"
-                    /></a>
-                    <a
-                      href="https://www.instagram.com/english_forit?igsh=MXd3eHRzNDBtemhjMQ=="
-                      target="_blank"
-                      ><img
-                        src="/icons/contacts/bg_light/instagram_icon_light.svg"
-                        alt="Follow on Instagram"
-                    /></a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <h1 class="title title__main title__bold">
-            Business <span>English Course</span>
-          </h1>
-          <h2 class="title">for tech specialists</h2>
-          <p class="text">
-            Your key to a prosperous tech career on a global scale
-          </p>
-
-          <ul class="details">
-            <li class="details__item">
-              <img
-                src="icons/english_levels.svg"
-                alt="Intermediate-Advanced"
-              />Intermediate-Advanced
+        <div class="icon-menu">
+          <ul>
+            <li class="telegram">
+              <a href="https://t.me/jenny_slb" target="_blank">Telegram</a>
             </li>
-            <li class="details__item">
-              <img
-                src="icons/personalized.svg"
-                alt="personalized approach"
-              />personalized approach
-            </li>
-            <li class="details__item">
-              <img src="icons/duration.svg" alt="duration" />1 month = 1 block
+            <li class="whatsapp">
+              <a href="https://wa.me/48698157670" target="_blank">WhatsApp</a>
             </li>
           </ul>
+        </div>
+      </div>
 
-          <a href="#program">
-            <button class="btn">Learn more</button>
-          </a>
+      <section class="main">
+        <div class="section__head">
+          <img src="icons/logo.svg" alt="logo" class="logo" />
+          <!-- бургер-меню, которое буду создавать с помощью CSS + JS. Пока вставляю иконку, которую нужно будет удалить в будущем. Продумать аниацию с изображением, когда будет открываться бургер-меню, чтоб человек видел, что оно открыто и его нужно закрыть через взаимодействие с измененным элементом -->
+          <img src="icons/burger_menu.svg" alt="menu" class="menu_mobile" />
 
-          <!-- <a href="#price">
+          <!-- заготовка будущего меню, которое открывается нажатием на иконку + JS -->
+          <nav class="menu__wrapper">
+            <ul class="menu__list">
+              <!-- * привязать ссылки-маяки -->
+              <li class="menu__item">
+                <a href="#whyness">About <span>course</span></a>
+              </li>
+              <li class="menu__item">
+                <a href="#audience">Who is this <span>course for?</span></a>
+              </li>
+              <li class="menu__item">
+                <a href="#program">Course <span>program</span></a>
+              </li>
+              <li class="menu__item"><a href="#review">Reviews</a></li>
+              <li class="menu__item"><a href="#price">Pricing</a></li>
+              <div class="menu__divider"></div>
+              <li class="menu__item">
+                <a href="#contact">Contact</a>
+                <div class="icons__wrapper">
+                  <a href="mailto:evgenia.slobodyan@gmail.com" target="_blank"><img
+                      src="/icons/contacts/bg_light/email_icon_light.svg" alt="Send me an email" /></a>
+                  <a href="https://t.me/jenny_slb" target="_blank"><img
+                      src="/icons/contacts/bg_light/telegram_icon_light.svg" alt="Send a message on Telegram" /></a>
+                  <a href="https://wa.me/48698157670" target="_blank"><img class="shrinked-img dark" width="22px"
+                      src="/icons/contacts/bg_dark/whatsapp_icon_dark2.svg" alt="Send a message on WhatsApp" /></a>
+                  <a href="https://www.instagram.com/english_forit?igsh=MXd3eHRzNDBtemhjMQ==" target="_blank"><img
+                      src="/icons/contacts/bg_light/instagram_icon_light.svg" alt="Follow on Instagram" /></a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <h1 class="title title__main title__bold">
+          Business <span>English Course</span>
+        </h1>
+        <h2 class="title">for tech specialists</h2>
+        <p class="text">
+          Your key to a prosperous tech career on a global scale
+        </p>
+
+        <ul class="details">
+          <li class="details__item">
+            <img src="icons/english_levels.svg" alt="Intermediate-Advanced" />Intermediate-Advanced
+          </li>
+          <li class="details__item">
+            <img src="icons/personalized.svg" alt="personalized approach" />personalized approach
+          </li>
+          <li class="details__item">
+            <img src="icons/duration.svg" alt="duration" />1 month = 1 block
+          </li>
+        </ul>
+
+        <a href="#program">
+          <button class="btn">Learn more</button>
+        </a>
+
+        <!-- <a href="#price">
             <button class="btn">Pricing</button>
           </a> -->
 
-          <div class="decor-wrapper">
-            <div class="decor">
-              <div class="decor-item"></div>
-              <div class="decor-item"></div>
-              <div class="decor-item"></div>
-              <div class="decor-item"></div>
-              <div class="decor-item"></div>
-              <div class="decor-item"></div>
-              <div class="decor-item"></div>
-              <div class="decor-item"></div>
-            </div>
+        <div class="decor-wrapper">
+          <div class="decor">
+            <div class="decor-item"></div>
+            <div class="decor-item"></div>
+            <div class="decor-item"></div>
+            <div class="decor-item"></div>
+            <div class="decor-item"></div>
+            <div class="decor-item"></div>
+            <div class="decor-item"></div>
+            <div class="decor-item"></div>
           </div>
-          
-        </section>
+        </div>
 
-        <section class="why" id="whyness">
-          <h2 class="title">
-            Why-ness <span class="title__bold">of the course</span>
-          </h2>
+      </section>
+
+      <section class="why" id="whyness">
+        <h2 class="title">
+          Why-ness <span class="title__bold">of the course</span>
+        </h2>
+        <p class="text">
+          If you already know English, you are obviously sure of its necessity
+          and value in today's competitive global marketplace. Customised
+          Business English Course is crafted to strengthen your soft skills so
+          that you become a more effective communicator in a business setting
+          as well as in general to foster personal growth and transform you
+          into a knowledgeable specialist
+        </p>
+      </section>
+
+      <section class="audience" id="audience">
+        <h2 class="title">
+          Who is this <span class="title__bold">course for?</span>
+        </h2>
+        <div class="audience__item">
+          <span class="audience__sequence">01</span>
           <p class="text">
-            If you already know English, you are obviously sure of its necessity
-            and value in today's competitive global marketplace. Customised
-            Business English Course is crafted to strengthen your soft skills so
-            that you become a more effective communicator in a business setting
-            as well as in general to foster personal growth and transform you
-            into a knowledgeable specialist
+            Tech specialists aimed at improving their English in business —
+            related context
           </p>
-        </section>
+        </div>
+        <div class="audience__item">
+          <span class="audience__sequence">02</span>
+          <p class="text">
+            Companies, business owners looking to train their employees
+          </p>
+        </div>
+        <div class="audience__item">
+          <span class="audience__sequence">03</span>
+          <p class="text">
+            Everyone working with international teams or on international
+            projects
+          </p>
+        </div>
+        <div class="audience__item">
+          <span class="audience__sequence">04</span>
+          <p class="text">
+            Any professionals seeking career advancement and self-development
+          </p>
+        </div>
+      </section>
 
-        <section class="audience" id="audience">
-          <h2 class="title">
-            Who is this <span class="title__bold">course for?</span>
-          </h2>
-          <div class="audience__item">
-            <span class="audience__sequence">01</span>
-            <p class="text">
-              Tech specialists aimed at improving their English in business —
-              related context
-            </p>
-          </div>
-          <div class="audience__item">
-            <span class="audience__sequence">02</span>
-            <p class="text">
-              Companies, business owners looking to train their employees
-            </p>
-          </div>
-          <div class="audience__item">
-            <span class="audience__sequence">03</span>
-            <p class="text">
-              Everyone working with international teams or on international
-              projects
-            </p>
-          </div>
-          <div class="audience__item">
-            <span class="audience__sequence">04</span>
-            <p class="text">
-              Any professionals seeking career advancement and self-development
-            </p>
-          </div>
-        </section>
+      <section class="uniqueness">
+        <h2 class="title">
+          Why is this
+          <span class="title__bold">course unique?</span>
+        </h2>
 
-        <section class="uniqueness">
-          <h2 class="title">
-            Why is this
-            <span class="title__bold">course unique?</span>
-          </h2>
+        <ul class="uniqueness__list">
+          <li class="uniqueness__item text">Relevant, not trivial topics</li>
+          <li class="uniqueness__item text">Smart goals for each session</li>
+          <li class="uniqueness__item text">Presentations, engaging tasks</li>
+          <li class="uniqueness__item text">
+            Focus on the speaking in IELTs format
+          </li>
+          <li class="uniqueness__item text">Regular progress tracking</li>
+        </ul>
+      </section>
 
-          <ul class="uniqueness__list">
-            <li class="uniqueness__item text">Relevant, not trivial topics</li>
-            <li class="uniqueness__item text">Smart goals for each session</li>
-            <li class="uniqueness__item text">Presentations, engaging tasks</li>
-            <li class="uniqueness__item text">
-              Focus on the speaking in IELTs format
-            </li>
-            <li class="uniqueness__item text">Regular progress tracking</li>
-          </ul>
-        </section>
+      <section class="after">
+        <h2 class="title">
+          After the
+          <span class="title__bold title_green">course you will:</span>
+        </h2>
 
-        <section class="after">
-          <h2 class="title">
-            After the
-            <span class="title__bold title_green">course you will:</span>
-          </h2>
+        <ul class="after__list">
+          <li class="after__item text">
+            <span class="text_semi_bold">Develop confidence</span> in using English
+            in the most common working situations
+          </li>
+          <li class="after__item text">
+            <span class="text_semi_bold">Elevate</span> your
+            <span class="text_semi_bold">career prospects</span> through the
+            enhancement of your communication skills
+          </li>
+          <li class="after__item text">
+            <span class="text_semi_bold">Reduce cultural misunderstandings</span>
+            when communicating with international clients and customers
+          </li>
+          <li class="after__item text">
+            <span class="text_semi_bold">Learn</span> how to give
+            <span class="text_semi_bold">feedback</span>, use method
+            <span class="text_semi_bold">PRES</span> and
+            <span class="text_semi_bold">ICE</span> in negotiations, set
+            <span>SMART</span> goals
+          </li>
+          <li class="after__item text">
+            <span class="text_semi_bold">Gain new knowledge</span> in the spheres
+            of sales & marketing, entrepreneurship, L&D
+          </li>
+        </ul>
+      </section>
 
-          <ul class="after__list">
-            <li class="after__item text">
-              <span class="text_semi_bold">Develop confidence</span> in using English
-              in the most common working situations
-            </li>
-            <li class="after__item text">
-              <span class="text_semi_bold">Elevate</span> your
-              <span class="text_semi_bold">career prospects</span> through the
-              enhancement of your communication skills
-            </li>
-            <li class="after__item text">
-              <span class="text_semi_bold">Reduce cultural misunderstandings</span>
-              when communicating with international clients and customers
-            </li>
-            <li class="after__item text">
-              <span class="text_semi_bold">Learn</span> how to give
-              <span class="text_semi_bold">feedback</span>, use method
-              <span class="text_semi_bold">PRES</span> and
-              <span class="text_semi_bold">ICE</span> in negotiations, set
-              <span>SMART</span> goals
-            </li>
-            <li class="after__item text">
-              <span class="text_semi_bold">Gain new knowledge</span> in the spheres
-              of sales & marketing, entrepreneurship, L&D
-            </li>
-          </ul>
-        </section>
+      <section class="steps">
+        <h2 class="title title_white">
+          How does
+          <span class="title__bold">it all go?</span>
+        </h2>
 
-        <section class="steps">
-          <h2 class="title title_white">
-            How does
-            <span class="title__bold">it all go?</span>
-          </h2>
+        <ul class="steps__list">
+          <li class="steps__item text_small">
+            <span class="steps__sequence">01</span>
+            book a free call to validate your learning needs
+          </li>
+          <li class="steps__item text_small">
+            <span class="steps__sequence">02</span>
+            set SMART goals
+          </li>
+          <li class="steps__item text_small">
+            <span class="steps__sequence">03</span>
+            choose a convenient schedule and format of learning
+          </li>
+          <li class="steps__item text_small">
+            <span class="steps__sequence">04</span>
+            create a Telegram chat
+          </li>
+          <li class="steps__item text_small">
+            <span class="steps__sequence">05</span>
+            receive a doc with all the needed info on the programme
+          </li>
+          <li class="steps__item text_small">
+            <span class="steps__sequence">06</span>
+            get assistance 24/7 in a chat
+          </li>
+          <li class="steps__item text_small">
+            <span class="steps__sequence">07</span>
+            start your education
+          </li>
+        </ul>
+      </section>
 
-          <ul class="steps__list">
-            <li class="steps__item text_small">
-              <span class="steps__sequence">01</span>
-              book a free call to validate your learning needs
-            </li>
-            <li class="steps__item text_small">
-              <span class="steps__sequence">02</span>
-              set SMART goals
-            </li>
-            <li class="steps__item text_small">
-              <span class="steps__sequence">03</span>
-              choose a convenient schedule and format of learning
-            </li>
-            <li class="steps__item text_small">
-              <span class="steps__sequence">04</span>
-              create a Telegram chat
-            </li>
-            <li class="steps__item text_small">
-              <span class="steps__sequence">05</span>
-              receive a doc with all the needed info on the programme
-            </li>
-            <li class="steps__item text_small">
-              <span class="steps__sequence">06</span>
-              get assistance 24/7 in a chat
-            </li>
-            <li class="steps__item text_small">
-              <span class="steps__sequence">07</span>
-              start your education
-            </li>
-          </ul>
-        </section>
+      <section class="program" id="program">
+        <h2 class="title">
+          course
+          <span class="title__bold">program</span>
+          <small>(blocks)</small>
+        </h2>
 
-        <section class="program" id="program">
-          <h2 class="title">
-            course
-            <span class="title__bold">program</span>
-            <small>(blocks)</small>
-          </h2>
-
-          <ol class="program__list">
-            <li class="program__item">
-              <div class="topic">
-                <!-- <span class="program__number">01</span> -->
-                Cross cultural communication
-              </div>
-              <!-- <div class="open">
-                <img src="./icons/arrow_down.svg" alt="open" />
-              </div> -->
-              <ul class="topic__detail">
-                <li>High/low context cultures</li>
-                <li>Small talk</li>
-                <li>Business writing</li>
-                <li>Gestures</li>
-                <li>Understanding accents</li>
-              </ul>
-            </li>
-
-            <li class="program__item">
-              <div class="topic">
-                <!-- <span class="program__number">02</span> -->
-                Work of the future
-              </div>
-              <!-- <div class="open">
-                <img src="./icons/arrow_down.svg" alt="open" />
-              </div> -->
-              <ul class="topic__detail">
-                <li>Future professions</li>
-                <li>Teamwork</li>
-                <li>Motivation</li>
-                <li>Managing companies/projects</li>
-                <li>Business Meetings and Presentations</li>
-              </ul>
-            </li>
-
-            <li class="program__item">
-              <div class="topic">
-                <!-- <span class="program__number">03</span> -->
-                Performance
-              </div>
-              <!-- <div class="open">
-                <img src="./icons/arrow_down.svg" alt="open" />
-              </div> -->
-              <ul class="topic__detail">
-                <li>Feelings</li>
-                <li>Job Interview</li>
-                <li>Performance metrics/review</li>
-                <li>Feedback and Evaluation</li>
-                <li>Time management</li>
-                <li>SMART Goal Setting</li>
-              </ul>
-            </li>
-
-            <li class="program__item">
-              <div class="topic">
-                <!-- <span class="program__number">04</span> -->
-                Negotiations
-              </div>
-              <!-- <div class="open">
-                <img src="./icons/arrow_down.svg" alt="open" />
-              </div> -->
-              <ul class="topic__detail">
-                <li>Negotiations. Types of negotiations</li>
-                <li>Conflicts</li>
-                <li>Conformity / Non-conformity</li>
-                <li>Failures</li>
-                <li>Solutions</li>
-                <li>PRES / ICE method</li>
-              </ul>
-            </li>
-
-            <li class="program__item">
-              <div class="topic">
-                <!-- <span class="program__number">05</span> -->
-                Customer service
-              </div>
-              <!-- <div class="open">
-                <img src="./icons/arrow_down.svg" alt="open" />
-              </div> -->
-              <ul class="topic__detail">
-                <li>Customer loyalty and LTV</li>
-                <li>Maslow's Pyramid of needs & Pyramid of customer needs</li>
-                <li>Types of clients</li>
-                <li>Complaints</li>
-                <li>L.A.S.T method</li>
-              </ul>
-            </li>
-
-            <li class="program__item">
-              <div class="topic">
-                <!-- <span class="program__number">06</span> -->
-                Marketing and Sales
-              </div>
-              <!-- <div class="open">
-                <img src="./icons/arrow_down.svg" alt="open" />
-              </div> -->
-              <ul class="topic__detail">
-                <li>Advertising</li>
-                <li>Going viral</li>
-                <li>Marketing trends</li>
-                <li>Neuromarketing</li>
-                <li>Sales</li>
-                <li>Pitching</li>
-              </ul>
-            </li>
-
-            <li class="program__item">
-              <div class="topic">
-                <!-- <span class="program__number">07</span> -->
-                Media
-              </div>
-              <!-- <div class="open">
-                <img src="./icons/arrow_down.svg" alt="open" />
-              </div> -->
-              <ul class="topic__detail">
-                <li>Social Media</li>
-                <li>Sources of information</li>
-                <li>News | Understanding news</li>
-                <li>News Blunders</li>
-                <li>Hoaxes</li>
-                <li>Headlines | Understanding headlines</li>
-              </ul>
-            </li>
-
-            <li class="program__item">
-              <div class="topic">
-                <!-- <span class="program__number">08</span> -->
-                Entrepreneurship + Innovation
-              </div>
-              <!-- <div class="open">
-                <img src="./icons/arrow_down.svg" alt="open" />
-              </div> -->
-              <ul class="topic__detail">
-                <li>Innovation</li>
-                <li>Creativity</li>
-                <li>Bloom's taxonomy</li>
-                <li>Design thinking, lateral thinking and mind mapping</li>
-                <li>Brainstorming and ideation</li>
-                <li>New trends and ideas</li>
-                <li>Start - ups</li>
-              </ul>
-            </li>
-
-            <li class="program__item">
-              <div class="topic">
-                <!-- <span class="program__number">09</span> -->
-                Digital Transformation
-              </div>
-              <!-- <div class="open">
-                <img src="./icons/arrow_down.svg" alt="open" />
-              </div> -->
-              <ul class="topic__detail">
-                <li>Does science matter?</li>
-                <li>Technologies</li>
-                <li>AI</li>
-                <li>E - commerce</li>
-              </ul>
-            </li>
-
-            <li class="program__item">
-              <div class="topic">
-                <!-- <span class="program__number">10</span> -->
-                Crisis and Risk
-              </div>
-              <!-- <div class="open">
-                <img src="./icons/arrow_down.svg" alt="open" />
-              </div> -->
-              <ul class="topic__detail">
-                <li>Changes</li>
-                <li>Risk management</li>
-                <li>SWOT analysis</li>
-                <li>Investments</li>
-                <li>New currencies</li>
-                <li>Finance</li>
-                <li>Strategic planning</li>
-              </ul>
-            </li>
-
-            <li class="program__item">
-              <div class="topic">
-                <!-- <span class="program__number">11</span> -->
-                L&D
-              </div>
-              <!-- <div class="open">
-                <img src="./icons/arrow_down.svg" alt="open" />
-              </div> -->
-              <ul class="topic__detail">
-                <li>Imagination and inspiration</li>
-                <li>Ranting/ raving</li>
-                <li>Education</li>
-                <li>Self-growth</li>
-              </ul>
-            </li>
-
-            <li class="program__item">
-              <div class="topic">
-                <!-- <span class="program__number">12</span> -->
-                Mindsetting
-              </div>
-              <!-- <div class="open">
-                <img src="./icons/arrow_down.svg" alt="open" />
-              </div> -->
-              <ul class="topic__detail">
-                <li>Time</li>
-                <li>Stress and relaxation</li>
-                <li>Burnout</li>
-                <li>Mind</li>
-                <li>Critical thinking</li>
-              </ul>
-            </li>
-          </ol>
-        </section>
-
-        <section class="author">
-          <h2 class="title">
-            Meet the
-            <span class="title__bold">author</span>
-          </h2>
-
-          <div class="author__wrapper">
-            <div class="author__photo">
-              <img src="./img/author_bg.jpg" alt="author's photo" />
+        <ol class="program__list">
+          <li class="program__item">
+            <div class="topic">
+              <!-- <span class="program__number">01</span> -->
+              Cross cultural communication
             </div>
-            <ul class="author__list">
-              <li class="author__item">
-                Yevheniia <span class="author__item_bold"> Slobodian</span>
-                <span class="author__item_small"
-                  >Corporate English trainer in IT</span
-                >
-              </li>
-              <li class="author__item">
-                1500+ <span class="author__item_small">satisfied clients</span>
-              </li>
-              <li class="author__item">
-                50+ <span class="author__item_small">IT companies</span>
-              </li>
-              <li class="author__item">
-                10+
-                <span class="author__item_small">years experience in IT</span>
-              </li>
-              <li class="author__item">
-                c1 certificates
-                <span class="author__item_small"
-                  >IELTs, CAE, British Council</span
-                >
-              </li>
+            <!-- <div class="open">
+                <img src="./icons/arrow_down.svg" alt="open" />
+              </div> -->
+            <ul class="topic__detail">
+              <li>High/low context cultures</li>
+              <li>Small talk</li>
+              <li>Business writing</li>
+              <li>Gestures</li>
+              <li>Understanding accents</li>
             </ul>
+          </li>
+
+          <li class="program__item">
+            <div class="topic">
+              <!-- <span class="program__number">02</span> -->
+              Work of the future
+            </div>
+            <!-- <div class="open">
+                <img src="./icons/arrow_down.svg" alt="open" />
+              </div> -->
+            <ul class="topic__detail">
+              <li>Future professions</li>
+              <li>Teamwork</li>
+              <li>Motivation</li>
+              <li>Managing companies/projects</li>
+              <li>Business Meetings and Presentations</li>
+            </ul>
+          </li>
+
+          <li class="program__item">
+            <div class="topic">
+              <!-- <span class="program__number">03</span> -->
+              Performance
+            </div>
+            <!-- <div class="open">
+                <img src="./icons/arrow_down.svg" alt="open" />
+              </div> -->
+            <ul class="topic__detail">
+              <li>Feelings</li>
+              <li>Job Interview</li>
+              <li>Performance metrics/review</li>
+              <li>Feedback and Evaluation</li>
+              <li>Time management</li>
+              <li>SMART Goal Setting</li>
+            </ul>
+          </li>
+
+          <li class="program__item">
+            <div class="topic">
+              <!-- <span class="program__number">04</span> -->
+              Negotiations
+            </div>
+            <!-- <div class="open">
+                <img src="./icons/arrow_down.svg" alt="open" />
+              </div> -->
+            <ul class="topic__detail">
+              <li>Negotiations. Types of negotiations</li>
+              <li>Conflicts</li>
+              <li>Conformity / Non-conformity</li>
+              <li>Failures</li>
+              <li>Solutions</li>
+              <li>PRES / ICE method</li>
+            </ul>
+          </li>
+
+          <li class="program__item">
+            <div class="topic">
+              <!-- <span class="program__number">05</span> -->
+              Customer service
+            </div>
+            <!-- <div class="open">
+                <img src="./icons/arrow_down.svg" alt="open" />
+              </div> -->
+            <ul class="topic__detail">
+              <li>Customer loyalty and LTV</li>
+              <li>Maslow's Pyramid of needs & Pyramid of customer needs</li>
+              <li>Types of clients</li>
+              <li>Complaints</li>
+              <li>L.A.S.T method</li>
+            </ul>
+          </li>
+
+          <li class="program__item">
+            <div class="topic">
+              <!-- <span class="program__number">06</span> -->
+              Marketing and Sales
+            </div>
+            <!-- <div class="open">
+                <img src="./icons/arrow_down.svg" alt="open" />
+              </div> -->
+            <ul class="topic__detail">
+              <li>Advertising</li>
+              <li>Going viral</li>
+              <li>Marketing trends</li>
+              <li>Neuromarketing</li>
+              <li>Sales</li>
+              <li>Pitching</li>
+            </ul>
+          </li>
+
+          <li class="program__item">
+            <div class="topic">
+              <!-- <span class="program__number">07</span> -->
+              Media
+            </div>
+            <!-- <div class="open">
+                <img src="./icons/arrow_down.svg" alt="open" />
+              </div> -->
+            <ul class="topic__detail">
+              <li>Social Media</li>
+              <li>Sources of information</li>
+              <li>News | Understanding news</li>
+              <li>News Blunders</li>
+              <li>Hoaxes</li>
+              <li>Headlines | Understanding headlines</li>
+            </ul>
+          </li>
+
+          <li class="program__item">
+            <div class="topic">
+              <!-- <span class="program__number">08</span> -->
+              Entrepreneurship + Innovation
+            </div>
+            <!-- <div class="open">
+                <img src="./icons/arrow_down.svg" alt="open" />
+              </div> -->
+            <ul class="topic__detail">
+              <li>Innovation</li>
+              <li>Creativity</li>
+              <li>Bloom's taxonomy</li>
+              <li>Design thinking, lateral thinking and mind mapping</li>
+              <li>Brainstorming and ideation</li>
+              <li>New trends and ideas</li>
+              <li>Start - ups</li>
+            </ul>
+          </li>
+
+          <li class="program__item">
+            <div class="topic">
+              <!-- <span class="program__number">09</span> -->
+              Digital Transformation
+            </div>
+            <!-- <div class="open">
+                <img src="./icons/arrow_down.svg" alt="open" />
+              </div> -->
+            <ul class="topic__detail">
+              <li>Does science matter?</li>
+              <li>Technologies</li>
+              <li>AI</li>
+              <li>E - commerce</li>
+            </ul>
+          </li>
+
+          <li class="program__item">
+            <div class="topic">
+              <!-- <span class="program__number">10</span> -->
+              Crisis and Risk
+            </div>
+            <!-- <div class="open">
+                <img src="./icons/arrow_down.svg" alt="open" />
+              </div> -->
+            <ul class="topic__detail">
+              <li>Changes</li>
+              <li>Risk management</li>
+              <li>SWOT analysis</li>
+              <li>Investments</li>
+              <li>New currencies</li>
+              <li>Finance</li>
+              <li>Strategic planning</li>
+            </ul>
+          </li>
+
+          <li class="program__item">
+            <div class="topic">
+              <!-- <span class="program__number">11</span> -->
+              L&D
+            </div>
+            <!-- <div class="open">
+                <img src="./icons/arrow_down.svg" alt="open" />
+              </div> -->
+            <ul class="topic__detail">
+              <li>Imagination and inspiration</li>
+              <li>Ranting/ raving</li>
+              <li>Education</li>
+              <li>Self-growth</li>
+            </ul>
+          </li>
+
+          <li class="program__item">
+            <div class="topic">
+              <!-- <span class="program__number">12</span> -->
+              Mindsetting
+            </div>
+            <!-- <div class="open">
+                <img src="./icons/arrow_down.svg" alt="open" />
+              </div> -->
+            <ul class="topic__detail">
+              <li>Time</li>
+              <li>Stress and relaxation</li>
+              <li>Burnout</li>
+              <li>Mind</li>
+              <li>Critical thinking</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section class="author">
+        <h2 class="title">
+          Meet the
+          <span class="title__bold">author</span>
+        </h2>
+
+        <div class="author__wrapper">
+          <div class="author__photo">
+            <img src="./img/author_bg.jpg" alt="author's photo" />
           </div>
-        </section>
+          <ul class="author__list">
+            <li class="author__item">
+              Yevheniia <span class="author__item_bold"> Slobodian</span>
+              <span class="author__item_small">Corporate English trainer in IT</span>
+            </li>
+            <li class="author__item">
+              1500+ <span class="author__item_small">satisfied clients</span>
+            </li>
+            <li class="author__item">
+              50+ <span class="author__item_small">IT companies</span>
+            </li>
+            <li class="author__item">
+              10+
+              <span class="author__item_small">years experience in IT</span>
+            </li>
+            <li class="author__item">
+              c1 certificates
+              <span class="author__item_small">IELTs, CAE, British Council</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <section class="customers" id="review">
-          <!-- !! вопрос к заказчику - хочет ли он, чтоб это была не картинка, а ссылка перехода на сайт клиента -->
-          <img
-            src="./icons/customers/proCoders_logo.svg"
-            alt="Web & Software Development Company ProCoders"
-          />
-          <img
-            src="./icons/customers/smartProject_logo.svg"
-            alt="Smart Project is a Ukrainian product company specializing in full-cycle game development"
-          />
-          <img
-            src="./icons/customers/noosphere_logo.svg"
-            alt="Noosphere is a non-governmental non-commercial organization focused on promoting STEM"
-          />
-          <img
-            src="./icons/customers/ciklum_logo.svg"
-            alt="Ciklum is a leading global company that develops digital products and provides digital services"
-          />
-          <img
-            src="./icons/customers/oracle_logo.svg"
-            alt="Oracle is a software and cloud technology company"
-          />
-          <img
-            src="./icons/customers/healthJoy_logo.svg"
-            alt="HealthJoy is a care navigation platform that makes it easy for employees to choose the highest-quality care at the best possible cost"
-          />
-        </section>
+      <section class="customers" id="review">
+        <!-- !! вопрос к заказчику - хочет ли он, чтоб это была не картинка, а ссылка перехода на сайт клиента -->
+        <img src="./icons/customers/proCoders_logo.svg" alt="Web & Software Development Company ProCoders" />
+        <img src="./icons/customers/smartProject_logo.svg"
+          alt="Smart Project is a Ukrainian product company specializing in full-cycle game development" />
+        <img src="./icons/customers/noosphere_logo.svg"
+          alt="Noosphere is a non-governmental non-commercial organization focused on promoting STEM" />
+        <img src="./icons/customers/ciklum_logo.svg"
+          alt="Ciklum is a leading global company that develops digital products and provides digital services" />
+        <img src="./icons/customers/oracle_logo.svg" alt="Oracle is a software and cloud technology company" />
+        <img src="./icons/customers/healthJoy_logo.svg"
+          alt="HealthJoy is a care navigation platform that makes it easy for employees to choose the highest-quality care at the best possible cost" />
+      </section>
 
-        <section class="feedback">
-          <div class="feedback__wrapper">
-            <div class="feedback__card current">
-              <div class="card__header">
-                <img
-                  src="./icons/students/yana_avatar.png"
-                  alt="Yana, Pre-Sales Manager for the company Promodo"
-                  class="avatar"
-                />
-                <div class="avatar__info">
-                  Yana, Pre-Sales Manager, <span>Promodo</span>
-                </div>
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          <div class="feedback__card current">
+            <div class="card__header">
+              <img src="./icons/students/yana_avatar.png" alt="Yana, Pre-Sales Manager for the company Promodo"
+                class="avatar" />
+              <div class="avatar__info">
+                Yana, Pre-Sales Manager, <span>Promodo</span>
               </div>
-              <div class="divider"></div>
-              <p class="student__review">
-                I like that the course has a a logical structure of and that we
-                can both refresh some important grammar rules and learn some new
-                phrases. Moreover, the teacher pays much attention to improving
-                our speaking skills.
-              </p>
             </div>
-            <div class="feedback__card">
-              <div class="card__header">
-                <img
-                  src="./icons/students/alex_avatar.png"
-                  alt="Alex, Head of Customer Support for the company Smart Project"
-                  class="avatar"
-                />
-                <div class="avatar__info">
-                  Alex, Head of Customer Support, <span>Smart Project </span>
-                </div>
-              </div>
-              <div class="divider"></div>
-              <p class="student__review">
-                Consistency of the lessons. There's a solid amount of listening,
-                grammar, new words. Also, I've got a clear vision the route
-                towards the next level. Email writing is the best. Very useful
-                in my job.
-              </p>
-            </div>
-            <div class="feedback__card">
-              <div class="card__header">
-                <img
-                  src="./icons/students/jaroslav_avatar.png"
-                  alt="Yaroslav, Project Manager for the company Ein-des-ein"
-                  class="avatar"
-                />
-                <div class="avatar__info">
-                  Yaroslav, Project Manager,<span>Ein-des-ein</span>
-                </div>
-              </div>
-              <div class="divider"></div>
-              <p class="student__review">
-                The course is clear and well-organized, making it easy to follow
-                and participate. The course offers a perfect balance between
-                grammar, vocabulary, and speaking. Each chapter provides not
-                only English knowledge, but also generally expands the outlook
-                on various professional topics. Most importantly, Jenny explains
-                everything in a way that's easy to understand, even complex
-                topics. I highly recommend these classes!
-              </p>
-            </div>
-            <div class="feedback__card">
-              <div class="card__header">
-                <img
-                  src="./icons/students/viktoria_avatar.png"
-                  alt="Viktoria, Financial Manager for the company Murka"
-                  class="avatar"
-                />
-                <div class="avatar__info">
-                  Viktoria, Financial Manager, <span>Murka</span>
-                </div>
-              </div>
-              <div class="divider"></div>
-              <p class="student__review">
-                All exercises are aimed at improving speaking skills, they are
-                interesting and relevant. The only thing I would like to add is
-                more exercises that would help memorise new words.
-              </p>
-            </div>
-            <div class="feedback__card">
-              <div class="card__header">
-                <img
-                  src="./icons/students/ann_avatar.png"
-                  alt="Ann, User Acquisition Manager for the Smart Project" class="avatar"
-                />
-                <div class="avatar__info">
-                  Ann, User Acquisition Manager, <span>Smart Project</span>
-                </div>
-              </div>
-              <div class="divider"></div>
-              <p class="student__review">
-                The choice of topics is superb relevant to me.There are a lot of
-                new words and phrases in business -related context, a lot of
-                interesting questions to discuss. All of tasks are relevant,
-                either listening or vocabulary ones;)
-              </p>
-            </div>
-            <div class="feedback__card">
-              <div class="card__header">
-                <img
-                  src="./icons/students/kate_avatar.png"
-                  alt="Kate, Customer Support Team Lead for the company Smart Project" class="avatar"
-                />
-                <div class="avatar__info">Kate, Customer Support Team Lead, <span>Smart Project</span>
-                </div>
-              </div>
-              <div class="divider"></div>
-              <p class="student__review">
-                Interesting topics and specialized vocabulary, new knowledge and
-                personal growth. This is exactly what I need.
-              </p>
-            </div>
-
-            <!-- перелистывание слайдера -->
-            
+            <div class="divider"></div>
+            <p class="student__review">
+              I like that the course has a a logical structure of and that we
+              can both refresh some important grammar rules and learn some new
+              phrases. Moreover, the teacher pays much attention to improving
+              our speaking skills.
+            </p>
           </div>
-          <div class="feedback-slider">
-            <div class="feedback-slider__arrow prev">
-              <img src="./icons/slider/arrow_left.svg" alt="" />
+          <div class="feedback__card">
+            <div class="card__header">
+              <img src="./icons/students/alex_avatar.png"
+                alt="Alex, Head of Customer Support for the company Smart Project" class="avatar" />
+              <div class="avatar__info">
+                Alex, Head of Customer Support, <span>Smart Project </span>
+              </div>
             </div>
-            <div class="feedback-slider__arrow next">
-              <img src="./icons/slider/arrow_left.svg" alt="" />
-            </div>
+            <div class="divider"></div>
+            <p class="student__review">
+              Consistency of the lessons. There's a solid amount of listening,
+              grammar, new words. Also, I've got a clear vision the route
+              towards the next level. Email writing is the best. Very useful
+              in my job.
+            </p>
           </div>
-        </section>
+          <div class="feedback__card">
+            <div class="card__header">
+              <img src="./icons/students/jaroslav_avatar.png"
+                alt="Yaroslav, Project Manager for the company Ein-des-ein" class="avatar" />
+              <div class="avatar__info">
+                Yaroslav, Project Manager,<span>Ein-des-ein</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <p class="student__review">
+              The course is clear and well-organized, making it easy to follow
+              and participate. The course offers a perfect balance between
+              grammar, vocabulary, and speaking. Each chapter provides not
+              only English knowledge, but also generally expands the outlook
+              on various professional topics. Most importantly, Jenny explains
+              everything in a way that's easy to understand, even complex
+              topics. I highly recommend these classes!
+            </p>
+          </div>
+          <div class="feedback__card">
+            <div class="card__header">
+              <img src="./icons/students/viktoria_avatar.png" alt="Viktoria, Financial Manager for the company Murka"
+                class="avatar" />
+              <div class="avatar__info">
+                Viktoria, Financial Manager, <span>Murka</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <p class="student__review">
+              All exercises are aimed at improving speaking skills, they are
+              interesting and relevant. The only thing I would like to add is
+              more exercises that would help memorise new words.
+            </p>
+          </div>
+          <div class="feedback__card">
+            <div class="card__header">
+              <img src="./icons/students/ann_avatar.png" alt="Ann, User Acquisition Manager for the Smart Project"
+                class="avatar" />
+              <div class="avatar__info">
+                Ann, User Acquisition Manager, <span>Smart Project</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <p class="student__review">
+              The choice of topics is superb relevant to me.There are a lot of
+              new words and phrases in business -related context, a lot of
+              interesting questions to discuss. All of tasks are relevant,
+              either listening or vocabulary ones;)
+            </p>
+          </div>
+          <div class="feedback__card">
+            <div class="card__header">
+              <img src="./icons/students/kate_avatar.png"
+                alt="Kate, Customer Support Team Lead for the company Smart Project" class="avatar" />
+              <div class="avatar__info">Kate, Customer Support Team Lead, <span>Smart Project</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <p class="student__review">
+              Interesting topics and specialized vocabulary, new knowledge and
+              personal growth. This is exactly what I need.
+            </p>
+          </div>
 
-        <section class="price" id="price">
-          <ul class="price__list">
-            <!-- * моя логика: если выделен блок , цвет блока меняется на черный , область стрелки на белый, кнопка на розовый #fbc8cd (var(--2)) (скорее всего через JS)? -->
-            <!-- * кнопка у нас ведет к записи или написать, то есть нужео будет подтянуть ссылку или отправку данных -->
-            <li class="price__item">
-              <div class="rate">25$ <span><a href="#program">block</a></span></div>
-              <p class="format__info">
-                <img src="./icons/check-dark.svg" alt="" />Self learner
-              </p>
-              <!-- <small>
+          <!-- перелистывание слайдера -->
+
+        </div>
+        <div class="feedback-slider">
+          <div class="feedback-slider__arrow prev">
+            <img src="./icons/slider/arrow_left.svg" alt="" />
+          </div>
+          <div class="feedback-slider__arrow next">
+            <img src="./icons/slider/arrow_left.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="price" id="price">
+        <ul class="price__list">
+          <!-- * моя логика: если выделен блок , цвет блока меняется на черный , область стрелки на белый, кнопка на розовый #fbc8cd (var(--2)) (скорее всего через JS)? -->
+          <!-- * кнопка у нас ведет к записи или написать, то есть нужео будет подтянуть ссылку или отправку данных -->
+          <li class="price__item">
+            <div class="rate">25$ <span><a href="#program">block</a></span></div>
+            <p class="format__info">
+              <img src="./icons/check-dark.svg" alt="" />Self learner
+            </p>
+            <!-- <small>
                 
               </small> -->
-              <ul class="price__details">
-                <li>Presentations with video and audio tasks, exercises to master the topic learned</li>
-                <li>Private Telegram Chat for questions</li>
-                <li>Access to materials</li>
-              </ul>
-              <a href="https://t.me/jenny_slb" target="_blank" class="button__wrapper">
-                <button class="enroll">Enroll now</button>
-              </a>
-            </li>
-            <li class="price__item">
-              <div class="rate">85$ <span><a href="#program">block</a></span></div>
-              <p class="format__info">
-                <img src="./icons/check-dark.svg" alt="" />Advanced Learner
-              </p>
-              <!-- <small>
+            <ul class="price__details">
+              <li>Presentations with video and audio tasks, exercises to master the topic learned</li>
+              <li>Private Telegram Chat for questions</li>
+              <li>Access to materials</li>
+            </ul>
+            <a href="https://t.me/jenny_slb" target="_blank" class="button__wrapper">
+              <button class="enroll">Enroll now</button>
+            </a>
+          </li>
+          <li class="price__item">
+            <div class="rate">85$ <span><a href="#program">block</a></span></div>
+            <p class="format__info">
+              <img src="./icons/check-dark.svg" alt="" />Advanced Learner
+            </p>
+            <!-- <small>
                 <a href="#program">1 block to choose</a>
               </small> -->
-              <ul class="price__details">
-                <li>Presentations with video and audio tasks, exercises to master the topic learned</li>
-                <li>Private Telegram Chat for questions</li>
-                <li>Access to materials</li>
-                <li>4 coaching sessions with Yevheniia</li>
-              </ul>
-              <a href="https://t.me/jenny_slb" target="_blank" class="button__wrapper">
-                <button class="enroll">Enroll now</button>
-              </a>
-            </li>
-            <li class="price__item">
-              <div class="rate">165$ <span><a href="#program">block</a></span></div>
-              <p class="format__info">
-                <img src="./icons/check-dark.svg" alt="" />Proficient Learner
-              </p>
-              <!-- <small>
+            <ul class="price__details">
+              <li>Presentations with video and audio tasks, exercises to master the topic learned</li>
+              <li>Private Telegram Chat for questions</li>
+              <li>Access to materials</li>
+              <li>4 coaching sessions with Yevheniia</li>
+            </ul>
+            <a href="https://t.me/jenny_slb" target="_blank" class="button__wrapper">
+              <button class="enroll">Enroll now</button>
+            </a>
+          </li>
+          <li class="price__item">
+            <div class="rate">165$ <span><a href="#program">block</a></span></div>
+            <p class="format__info">
+              <img src="./icons/check-dark.svg" alt="" />Proficient Learner
+            </p>
+            <!-- <small>
                 <a href="#program">1 block to choose</a>
               </small> -->
-              <ul class="price__details">
-                <li>Presentations with video and audio tasks, exercises to master the topic learned</li>
-                <li>Private Telegram Chat for questions</li>
-                <li>Access to materials</li>
-                <li>Setting SMART goals in learning</li>
-                <li>Weekly Meeting Planning</li>
-                <li>8 coaching sessions with Yevheniia</li>
-                <li>Feedback on the progress</li>
-              </ul>
-              <a href="https://t.me/jenny_slb" target="_blank" class="enroll">
-                Enroll now
-              </a>
-            </li>
-          </ul>
-        </section>
+            <ul class="price__details">
+              <li>Presentations with video and audio tasks, exercises to master the topic learned</li>
+              <li>Private Telegram Chat for questions</li>
+              <li>Access to materials</li>
+              <li>Setting SMART goals in learning</li>
+              <li>Weekly Meeting Planning</li>
+              <li>8 coaching sessions with Yevheniia</li>
+              <li>Feedback on the progress</li>
+            </ul>
+            <a href="https://t.me/jenny_slb" target="_blank" class="enroll">
+              Enroll now
+            </a>
+          </li>
+        </ul>
+      </section>
 
-        <section class="questions">
-          <ol class="questions__list">
-            <!-- элемент li будет состоять из 1 - номер, 2 - текст , 3 - плюсик, который при нажатии будет открывать скрытый текст -->
-            <!-- при нажатии на "+" открывается скрытый текст и при этом "+" меняется на "-", после нажания на "-" текст скрывается и "-" меняется на "+" -->
-            
-            <li class="question__item">
-              <div class="question__text">
-                <!-- <span class="question__sequence">01</span> -->
-                How do I pay for the course?
-              </div>
-              <!-- <div class="show">
+      <section class="questions">
+        <ol class="questions__list">
+          <!-- элемент li будет состоять из 1 - номер, 2 - текст , 3 - плюсик, который при нажатии будет открывать скрытый текст -->
+          <!-- при нажатии на "+" открывается скрытый текст и при этом "+" меняется на "-", после нажания на "-" текст скрывается и "-" меняется на "+" -->
+
+          <li class="question__item">
+            <div class="question__text">
+              <!-- <span class="question__sequence">01</span> -->
+              How do I pay for the course?
+            </div>
+            <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
               </div> -->
-              <div class="answer__text">
-                The payment is done monthly by the 5th day of the current month on 100% prepayment condition to the PE bank account. Invoice can be provided on request
-              </div>
-            </li>
-            <!-- <div class="question__divider"></div> -->
+            <div class="answer__text">
+              The payment is done monthly by the 5th day of the current month on 100% prepayment condition to the PE
+              bank account. Invoice can be provided on request
+            </div>
+          </li>
+          <!-- <div class="question__divider"></div> -->
 
-            <li class="question__item">
-              <div class="question__text">
-                <!-- <span class="question__sequence">02</span> -->
-                How long does the course last?
-              </div>
-              <!-- <div class="show">
+          <li class="question__item">
+            <div class="question__text">
+              <!-- <span class="question__sequence">02</span> -->
+              How long does the course last?
+            </div>
+            <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
               </div> -->
-              <div class="answer__text">
-                On average one block is covered within a month, though it all depends on the learners&amp; goals, abilities and frequency of meetings
-              </div>
-            </li>
-            <!-- <div class="question__divider"></div> -->
+            <div class="answer__text">
+              On average one block is covered within a month, though it all depends on the learners&amp; goals,
+              abilities and frequency of meetings
+            </div>
+          </li>
+          <!-- <div class="question__divider"></div> -->
 
-            <li class="question__item">
-              <div class="question__text">
-                <!-- <span class="question__sequence">03</span> -->
-                How do I know about my progress?
-              </div>
-              <!-- <div class="show">
+          <li class="question__item">
+            <div class="question__text">
+              <!-- <span class="question__sequence">03</span> -->
+              How do I know about my progress?
+            </div>
+            <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
               </div> -->
-              <div class="answer__text">
-                There are tests on each block to check the learners' progress
-              </div>
-            </li>
-            <!-- <div class="question__divider"></div> -->
+            <div class="answer__text">
+              There are tests on each block to check the learners' progress
+            </div>
+          </li>
+          <!-- <div class="question__divider"></div> -->
 
-            <li class="question__item">
-              <div class="question__text">
-                <!-- <span class="question__sequence">04</span> -->
-                Is there any grammar on the course?
-              </div>
-              <!-- <div class="show">
+          <li class="question__item">
+            <div class="question__text">
+              <!-- <span class="question__sequence">04</span> -->
+              Is there any grammar on the course?
+            </div>
+            <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
               </div> -->
-              <div class="answer__text">
-                There are 2-3 grammar topics to revise in each block and still
-                the course focuses mostly on speaking and learning new
-                vocabulary
-              </div>
-            </li>
-            <!-- <div class="question__divider"></div> -->
+            <div class="answer__text">
+              There are 2-3 grammar topics to revise in each block and still
+              the course focuses mostly on speaking and learning new
+              vocabulary
+            </div>
+          </li>
+          <!-- <div class="question__divider"></div> -->
 
-            <li class="question__item">
-              <div class="question__text">
-                <!-- <span class="question__sequence">05</span> -->
-                What level of English is this course for?
-              </div>
-              <!-- <div class="show">
+          <li class="question__item">
+            <div class="question__text">
+              <!-- <span class="question__sequence">05</span> -->
+              What level of English is this course for?
+            </div>
+            <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
               </div> -->
-              <div class="answer__text">
-                Intermediate Strong - Upper-Intermediate - Advanced
-              </div>
-            </li>
-            <!-- <div class="question__divider"></div> -->
+            <div class="answer__text">
+              Intermediate Strong - Upper-Intermediate - Advanced
+            </div>
+          </li>
+          <!-- <div class="question__divider"></div> -->
 
-            <li class="question__item">
-              <div class="question__text">
-                <!-- <span class="question__sequence">06</span> -->
-                Will I receive a certificate after completing the course?
-              </div>
-              <!-- <div class="show">
+          <li class="question__item">
+            <div class="question__text">
+              <!-- <span class="question__sequence">06</span> -->
+              Will I receive a certificate after completing the course?
+            </div>
+            <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
               </div> -->
-              <div class="answer__text">
-                I do not issue certificates yet
-              </div>
-            </li>
-            <!-- <div class="question__divider"></div> -->
+            <div class="answer__text">
+              I do not issue certificates yet
+            </div>
+          </li>
+          <!-- <div class="question__divider"></div> -->
 
-            <li class="question__item">
-              <div class="question__text">
-                <!-- <span class="question__sequence">07</span> -->
-                Can I take those blocks that I like?
-              </div>
-              <!-- <div class="show">
+          <li class="question__item">
+            <div class="question__text">
+              <!-- <span class="question__sequence">07</span> -->
+              Can I take those blocks that I like?
+            </div>
+            <!-- <div class="show">
                 <img
                   src="./icons/question_item_show_icon.svg"
                   alt="show answer"
                 />
               </div> -->
-              <div class="answer__text">
-                Yes, it's possible to take those blocks that are the most
-                relevant to you
-              </div>
-            </li>
-            <!-- <div class="question__divider"></div> -->
-          </ol>
-        </section>
+            <div class="answer__text">
+              Yes, it's possible to take those blocks that are the most
+              relevant to you
+            </div>
+          </li>
+          <!-- <div class="question__divider"></div> -->
+        </ol>
+      </section>
 
-        <section class="contacts" id="contact">
-          <h2 class="title title_white">
-            Any questions?
-            <span class="title__bold title_white">Contact me</span>
-          </h2>
-          <p class="text">
-            Let's elevate your communication abilities and unlock new
-            opportunities together
-          </p>
+      <section class="contacts" id="contact">
+        <h2 class="title title_white">
+          Any questions?
+          <span class="title__bold title_white">Contact me</span>
+        </h2>
+        <p class="text">
+          Let's elevate your communication abilities and unlock new
+          opportunities together
+        </p>
 
-          <!-- * привязать ссылки к контактам; продумать анимацию при взаимодействии с ссылками. -->
-          <ol class="contacts__list">
-            <li class="contact__item">
-              <img
-                src="./icons/contacts/bg_dark/email_icon_dark.svg"
-                alt="Send me an email"
-              />
-              <a
-                href="mailto:evgenia.slobodyan@gmail.com"
-                target="_blank"
-                class="contact__desc"
-                >Send me an email
-              </a>
-            </li>
-            <li class="contact__item">
-              <img
-                src="./icons/contacts/bg_dark/telegram_icon_dark.svg"
-                alt="Send a message on Telegram"
-              />
-              <a href="https://t.me/jenny_slb" target="_blank" class="contact__desc"
-                >Send a message on Telegram</a
-              >
-            </li>
-            <li class="contact__item">
-              <img class="shrinked-img light"
-                src="/icons/contacts/bg_dark/whatsapp_icon_dark.svg"
-                alt="Send a message on WhatsApp"
-              />
-              <a href="https://wa.me/48698157670" target="_blank" class="contact__desc">Send a message on WhatsApp</a>
-            </li>
-            <li class="contact__item">
-              <img
-                src="./icons/contacts/bg_dark/instagram_icon_dark.svg"
-                alt="Follow on Instagram"
-              />
-              <a
-                href="https://www.instagram.com/english_forit?igsh=MXd3eHRzNDBtemhjMQ=="
-                target="_blank"
-                class="contact__desc"
-                >Follow on Instagram</a
-              >
-            </li>
-          </ol>
+        <!-- * привязать ссылки к контактам; продумать анимацию при взаимодействии с ссылками. -->
+        <ol class="contacts__list">
+          <li class="contact__item">
+            <img src="./icons/contacts/bg_dark/email_icon_dark.svg" alt="Send me an email" />
+            <a href="mailto:evgenia.slobodyan@gmail.com" target="_blank" class="contact__desc">Send me an email
+            </a>
+          </li>
+          <li class="contact__item">
+            <img src="./icons/contacts/bg_dark/telegram_icon_dark.svg" alt="Send a message on Telegram" />
+            <a href="https://t.me/jenny_slb" target="_blank" class="contact__desc">Send a message on Telegram</a>
+          </li>
+          <li class="contact__item">
+            <img class="shrinked-img light" src="/icons/contacts/bg_dark/whatsapp_icon_dark.svg"
+              alt="Send a message on WhatsApp" />
+            <a href="https://wa.me/48698157670" target="_blank" class="contact__desc">Send a message on WhatsApp</a>
+          </li>
+          <li class="contact__item">
+            <img src="./icons/contacts/bg_dark/instagram_icon_dark.svg" alt="Follow on Instagram" />
+            <a href="https://www.instagram.com/english_forit?igsh=MXd3eHRzNDBtemhjMQ==" target="_blank"
+              class="contact__desc">Follow on Instagram</a>
+          </li>
+        </ol>
 
-          <div class="footer">
-            <span>&copy;All Rights Reserved, 2025</span>
-            <!-- * добавить ccылку на внешний документ или страницу с информацией о правилах оплаты и возврата -->
-            <a href="javascript:void(0)" target="_blank" class="link_external">Payments and refunds</a>
-            <!-- * добавить ccылку на внешний документ или страницу с информацией о Terms and conditions -->
-            <a href="javascript:void(0)" target="_blank" class="link_external">Terms and conditions</a>
-            <!-- * добавить ccылку на внешний документ или страницу с информацией о Privacy policy -->
-            <a href="javascript:void(0)" target="_blank" class="link_external">Privacy policy</a>
-          </div>
-        </section>
-      </div>
-    </main>
-  </body>
+        <div class="footer">
+          <span>&copy;All Rights Reserved, 2025</span>
+          <!-- * добавить ccылку на внешний документ или страницу с информацией о правилах оплаты и возврата -->
+          <a href="payments_and_refunds.html" target="_blank" class="link_external">Payments and refunds</a>
+          <!-- * добавить ccылку на внешний документ или страницу с информацией о Terms and conditions -->
+          <a href="javascript:void(0)" target="_blank" class="link_external">Terms and conditions</a>
+          <!-- * добавить ccылку на внешний документ или страницу с информацией о Privacy policy -->
+          <a href="javascript:void(0)" target="_blank" class="link_external">Privacy policy</a>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
 </html>

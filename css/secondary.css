@@ -1,0 +1,51 @@
+.main {
+    min-height: 272px;
+    padding: 32px 22px 32px 28px;
+}
+
+/* PAGE PAYMENTS AND REFUNDS */
+.rules {
+    margin-top: 36px;
+    /* padding: 28px 25px; */
+    padding: 32px 22px 32px 28px;
+    /* min-height: 348px; */
+    border-radius: 20px;
+    background-image: url('../icons/why_bg.png'),
+        linear-gradient(to top, rgba(245, 245, 245, 1), rgba(245, 245, 245, 1));
+    background-position: center center, left top;
+    background-repeat: no-repeat, repeat;
+
+    /* або просто сирій фон */
+    /* background-color: var(--color-section-secondary); */
+
+}
+
+.rules__list {
+    list-style: none;
+
+    li {
+        margin-top: 18px;
+    }
+}
+
+.rule__title {
+    font: var(--font-bold);
+    font-size: 17px;
+}
+
+.rule__text {
+    margin-top: 5px;
+    font: var(--font-regular);
+    font-size: 14px;
+}
+
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 100%;
+    font-size: 15px;
+    background: var(--color-section-primary);
+    color: var(--color-bg-primary);
+}
