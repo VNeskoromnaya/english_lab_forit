@@ -6,9 +6,7 @@
 /* PAGE PAYMENTS AND REFUNDS */
 .rules {
     margin-top: 36px;
-    /* padding: 28px 25px; */
     padding: 32px 22px 32px 28px;
-    /* min-height: 348px; */
     border-radius: 20px;
     background-image: url('../icons/why_bg.png'),
         linear-gradient(to top, rgba(245, 245, 245, 1), rgba(245, 245, 245, 1));
@@ -17,7 +15,6 @@
 
     /* або просто сирій фон */
     /* background-color: var(--color-section-secondary); */
-
 }
 
 .rules__list {
@@ -48,4 +45,35 @@
     font-size: 15px;
     background: var(--color-section-primary);
     color: var(--color-bg-primary);
+}
+
+/* Page Terms and conditions (oferta.html) and  Privacy policy */
+.conditions {
+    margin-top: 36px;
+    padding: 32px 22px 32px 28px;
+    border-radius: 20px;
+    /* просто сирій фон */
+    background-color: var(--color-section-secondary);
+
+}
+
+.conditions__list {}
+
+.conditions__title,
+.policy__list {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.items__list {
+    list-style: none;
+    text-transform: none;
+    padding-left: 15px;
+}
+
+.item__text {
+    font-size: 12px;
+    margin-top: 8px;
+    text-transform: none;
 }
